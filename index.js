@@ -5,9 +5,9 @@ const cors = require('cors');
 
 const reciprocalServicesDatabase = mysql.createConnection({
     host     : 'localhost',
-    user     : 'reciprocal_services_admin',
-    password : 'Y49E6qN4rHLzEF',
-    database : 'reciprocal_services_database'
+    user     : 'reciprocal-services-access',
+    password : '724805',
+    database : 'reciprocal-services-db'
 });
 
 reciprocalServicesDatabase.connect(error => {
@@ -109,12 +109,16 @@ app.put('/update-user', (req, res) => {
 
 //creation endpoints
 
-app.get('/create-transaction', (req, res) => {
+app.post('/create-transaction', (req, res) => {
 
-    let sql = "INSERT INTO transactions (serviceId, providingUserId, receivingUserId, completed, dateIssued) VALUES ( 3, 2, 1, 0, '2018/11/06')";
-    reciprocalServicesDatabase.query(sql, (error, result) => {
+    const {serviceId, providingUserId, receivingUserId, dateIssued} = req.body;
+
+    console.log(`Request Body: ${serviceId, providingUserId, receivingUserId}`);
+
+    let sql = "INSERT INTO transactions (serviceId, providingUserId, receivingUserId, dateIssued, transactionOrdered, orderConfirmed, orderCompleted, completionConfirmed, orderDenied) VALUES (?, ?, ?, ?, 1, 0, 0, 0, 0)";
+    reciprocalServicesDatabase.query(sql, [serviceId, providingUserId, receivingUserId, dateIssued], (error, result) => {
         if(error) throw error;
-        console.log(result);
+        console.log(`Result: ${result}`);
         res.send(result);
     })
 })
