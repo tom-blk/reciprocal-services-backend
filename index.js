@@ -105,7 +105,10 @@ app.put('/update-user', (req, res) => {
 })
 
 
-//TRANSACTION ENDPONTS
+
+
+
+// OUTGOING ORDER ENDPONTS
 
 //creation endpoints
 
@@ -123,7 +126,19 @@ app.post('/create-transaction', (req, res) => {
     })
 })
 
-//fetching endpoints
+//read endpoints
+
+app.post('/get-actionable-outgoing-orders/:userId', (req, res) => {
+
+    const {receivingUserId} = req.body;
+
+    let sql = 'SELECT * FROM transactions WHERE receivingUserId = ? AND (orderConfirmed = 1 OR orderCompleted = 1 OR orderDenied = 1) AND completionConfirmed = 0';
+    reciprocalServicesDatabase.query(sql, [receivingUserId], (error, result) => {
+        if(error) throw error;
+        console.log("actionable outgoing orders" + result);
+        res.send(result);
+    })
+})
 
 app.post('/get-user-specific-open-transactions/:userId', (req, res) => {
 
@@ -151,21 +166,107 @@ app.post('/get-user-specific-completed-transactions/:userId', (req, res) => {
 
 //update endpoints
 
-app.get('/complete-transaction', (req, res) => {
+app.put('/deny-order/:orderId', (req, res) => {
 
-    const transactionId = req.params.id; 
+    const { orderId } = req.body;
 
-    let sql = "UPDATE transactions SET completed=1 WHERE id=?";
-    reciprocalServicesDatabase.query(sql, transactionId, (error, result) => {
+    let sql = "UPDATE transactions SET orderDenied=1 WHERE id=?";
+    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
     })
 })
 
+app.put('/confirm-order/:orderId', (req, res) => {
+
+    const { orderId } = req.body;
+
+    let sql = "UPDATE transactions SET orderConfirmed=1 WHERE id=?";
+    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
+    })
+})
+
+app.put('/complete-order/:orderId', (req, res) => {
+
+    const { orderId } = req.body;
+
+    let sql = "UPDATE transactions SET orderCompleted=1 WHERE id=?";
+    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
+    })
+})
+
+app.put('/confirm-order-completion/:orderId', (req, res) => {
+
+    const { orderId } = req.body;
+
+    let sql = "UPDATE transactions SET completionConfirmed=1 WHERE id=?";
+    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
+    })
+})
+
+
+
+
+
+// INCOMING ORDER ENDPOINTS
+
+//read endpoints
+
+app.post('/get-incoming-orders/:userId', (req, res) => {
+
+    const { providingUserId } = req.body;
+
+    let sql = 'SELECT * FROM transactions WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 0 AND orderCompleted = 0 AND completionConfirmed = 0)';
+    reciprocalServicesDatabase.query(sql, [providingUserId], (error, result) => {
+        if(error) throw error;
+        console.log("incoming orders" + result);
+        res.send(result);
+    })
+})
+
+app.post('/get-incoming-pending-orders/:userId', (req, res) => {
+
+    const { providingUserId } = req.body;
+
+    let sql = 'SELECT * FROM transactions WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND completionConfirmed = 0)';
+    reciprocalServicesDatabase.query(sql, [providingUserId], (error, result) => {
+        if(error) throw error;
+        console.log("pending orders" + result);
+        res.send(result);
+    })
+})
+
+app.post('/get-incoming-completed-orders/:userId', (req, res) => {
+
+    const { providingUserId } = req.body;
+
+    let sql = 'SELECT * FROM transactions WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND orderCompleted = 1 AND completionConfirmed = 1)';
+    reciprocalServicesDatabase.query(sql, [providingUserId], (error, result) => {
+        if(error) throw error;
+        console.log("completed orders" + result);
+        res.send(result);
+    })
+})
+
+//
+
+
+
+
+
 //SERVICE ENDPOINTS
 
-//creation endpoints
+//create endpoints
 
 app.get('/create-service', (req, res) => {
 
@@ -177,7 +278,7 @@ app.get('/create-service', (req, res) => {
     })
 })
 
-//fetching endpoints
+//read endpoints
 
 app.get('/get-superficial-service-details', (req, res) => {
 
