@@ -7,7 +7,8 @@ const reciprocalServicesDatabase = mysql.createConnection({
     host     : 'localhost',
     user     : 'reciprocal-services-access',
     password : '724805',
-    database : 'reciprocal-services-db'
+    database : 'reciprocal-services-db',
+    multipleStatements: true
 });
 
 reciprocalServicesDatabase.connect(error => {
@@ -104,6 +105,28 @@ app.put('/update-user', (req, res) => {
     })
 })
 
+app.put('/rate-user', (req, res) => {
+
+    const {userId, rating} = req.body;
+
+    let getSql = 'SELECT rating, ratingCount FROM users WHERE id = ?';
+
+    let updateSql = 'UPDATE users SET rating = ?, ratingCount = ? WHERE id = ?'; 
+
+    reciprocalServicesDatabase.query(getSql, [userId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        const newRatingCount = result[0].ratingCount+1;
+        const newRating = (result[0].rating * result[0].ratingCount + rating) / newRatingCount;
+        reciprocalServicesDatabase.query(updateSql, [newRating, newRatingCount, userId], (error, result) => {
+            if(error) throw error;
+            console.log(result);
+            res.send(result);
+        })
+    })
+
+})
+
 
 
 
@@ -112,13 +135,13 @@ app.put('/update-user', (req, res) => {
 
 //creation endpoints
 
-app.post('/create-transaction', (req, res) => {
+app.post('/create-order', (req, res) => {
 
     const {serviceId, providingUserId, receivingUserId, dateIssued} = req.body;
 
     console.log(`Request Body: ${serviceId, providingUserId, receivingUserId}`);
 
-    let sql = "INSERT INTO transactions (serviceId, providingUserId, receivingUserId, dateIssued, transactionOrdered, orderConfirmed, orderCompleted, completionConfirmed, orderDenied) VALUES (?, ?, ?, ?, 1, 0, 0, 0, 0)";
+    let sql = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, status) VALUES (?, ?, ?, ?, 1)";
     reciprocalServicesDatabase.query(sql, [serviceId, providingUserId, receivingUserId, dateIssued], (error, result) => {
         if(error) throw error;
         console.log(`Result: ${result}`);
@@ -128,41 +151,71 @@ app.post('/create-transaction', (req, res) => {
 
 //read endpoints
 
-app.post('/get-actionable-outgoing-orders/:userId', (req, res) => {
+app.post('/get-all-orders/:userId', async (req, res) => {
 
-    const {receivingUserId} = req.body;
+    const { orderDirection, userId } = req.body;
 
-    let sql = 'SELECT * FROM transactions WHERE receivingUserId = ? AND (orderConfirmed = 1 OR orderCompleted = 1 OR orderDenied = 1) AND completionConfirmed = 0';
-    reciprocalServicesDatabase.query(sql, [receivingUserId], (error, result) => {
+    const allOrders = {
+        new: [],
+        accepted: [],
+        fulfilled: [],
+        completed: [],
+        denied: []
+    }
+
+    if(orderDirection === 'outgoing'){
+        let sql = 'SELECT * FROM orders WHERE receivingUserId = ? AND status = 1; SELECT * FROM orders WHERE receivingUserId = ? AND status = 2; SELECT * FROM orders WHERE receivingUserId = ? AND status = 3; SELECT * FROM orders WHERE receivingUserId = 4 AND status = ?; SELECT * FROM orders WHERE receivingUserId = ? AND status = 5;';
+
+        reciprocalServicesDatabase.query(sql, [userId, userId, userId, userId, userId], (error, result) => {
+            if(error) throw error;
+            console.log("order outgoing" + result);
+            allOrders.new = result[0];
+            allOrders.accepted = result[1];
+            allOrders.fulfilled = result[2];
+            allOrders.completed = result[3];
+            allOrders.denied = result[4];
+            res.send(allOrders);
+        })
+    }
+
+    if(orderDirection === 'incoming'){
+        let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND status = 1; SELECT * FROM orders WHERE providingUserId = ? AND status = 2; SELECT * FROM orders WHERE providingUserId = ? AND status = 3; SELECT * FROM orders WHERE providingUserId = 4 AND status = ?; SELECT * FROM orders WHERE providingUserId = ? AND status = 5;';
+
+        reciprocalServicesDatabase.query(sql, [userId, userId, userId, userId, userId], (error, result) => {
+            if(error) throw error;
+            console.log("order incoming" + result);
+            allOrders.new = result[0];
+            allOrders.accepted = result[1];
+            allOrders.fulfilled = result[2];
+            allOrders.completed = result[3];
+            allOrders.denied = result[4];
+            res.send(allOrders);
+        })
+    }
+})
+
+app.post('/get-orders-with-specific-status-and-direction/:userId', (req, res) => {
+
+    const {orderDirection, status, userId} = req.body;
+
+    if(orderDirection === 'outgoing'){
+        let sql = 'SELECT * FROM orders WHERE receivingUserId = ? AND status = ?';
+        reciprocalServicesDatabase.query(sql, [userId, status], (error, result) => {
         if(error) throw error;
         console.log("actionable outgoing orders" + result);
         res.send(result);
-    })
-})
-
-app.post('/get-user-specific-open-transactions/:userId', (req, res) => {
-
-    const {userId} = req.body;
-
-    let sql = 'SELECT * FROM transactions WHERE receivingUserId = ? AND (completionConfirmed = 0 AND orderDenied = 0)';
-    reciprocalServicesDatabase.query(sql, [userId], (error, result) => {
+        })
+    }
+    if(orderDirection === 'incoming'){
+        let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND status = ?';
+        reciprocalServicesDatabase.query(sql, [userId, status], (error, result) => {
         if(error) throw error;
-        console.log("open transactions" + result);
+        console.log("actionable incoming orders" + result);
         res.send(result);
-    })
+        })
+    }
 })
 
-app.post('/get-user-specific-completed-transactions/:userId', (req, res) => {
-
-    const {userId} = req.body;
-
-    let sql = 'SELECT * FROM transactions WHERE receivingUserId = ? AND (completionConfirmed = 1 OR orderDenied = 1)';
-    reciprocalServicesDatabase.query(sql, [userId], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-        res.send(result);
-    })
-})
 
 //update endpoints
 
@@ -170,7 +223,7 @@ app.put('/deny-order/:orderId', (req, res) => {
 
     const { orderId } = req.body;
 
-    let sql = "UPDATE transactions SET orderDenied=1 WHERE id=?";
+    let sql = "UPDATE orders SET status = 5 WHERE id=?";
     reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
@@ -178,11 +231,11 @@ app.put('/deny-order/:orderId', (req, res) => {
     })
 })
 
-app.put('/confirm-order/:orderId', (req, res) => {
+app.put('/accept-order/:orderId', (req, res) => {
 
     const { orderId } = req.body;
 
-    let sql = "UPDATE transactions SET orderConfirmed=1 WHERE id=?";
+    let sql = "UPDATE orders SET status = 2 WHERE id=?";
     reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
@@ -194,7 +247,7 @@ app.put('/complete-order/:orderId', (req, res) => {
 
     const { orderId } = req.body;
 
-    let sql = "UPDATE transactions SET orderCompleted=1 WHERE id=?";
+    let sql = "UPDATE orders SET orderCompleted=1 WHERE id=?";
     reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
@@ -206,7 +259,7 @@ app.put('/confirm-order-completion/:orderId', (req, res) => {
 
     const { orderId } = req.body;
 
-    let sql = "UPDATE transactions SET completionConfirmed=1 WHERE id=?";
+    let sql = "UPDATE orders SET completionConfirmed=1 WHERE id=?";
     reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
@@ -226,7 +279,7 @@ app.post('/get-incoming-orders/:userId', (req, res) => {
 
     const { providingUserId } = req.body;
 
-    let sql = 'SELECT * FROM transactions WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 0 AND orderCompleted = 0 AND completionConfirmed = 0)';
+    let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 0 AND orderCompleted = 0 AND completionConfirmed = 0)';
     reciprocalServicesDatabase.query(sql, [providingUserId], (error, result) => {
         if(error) throw error;
         console.log("incoming orders" + result);
@@ -238,7 +291,7 @@ app.post('/get-incoming-pending-orders/:userId', (req, res) => {
 
     const { providingUserId } = req.body;
 
-    let sql = 'SELECT * FROM transactions WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND completionConfirmed = 0)';
+    let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND completionConfirmed = 0)';
     reciprocalServicesDatabase.query(sql, [providingUserId], (error, result) => {
         if(error) throw error;
         console.log("pending orders" + result);
@@ -250,7 +303,7 @@ app.post('/get-incoming-completed-orders/:userId', (req, res) => {
 
     const { providingUserId } = req.body;
 
-    let sql = 'SELECT * FROM transactions WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND orderCompleted = 1 AND completionConfirmed = 1)';
+    let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND orderCompleted = 1 AND completionConfirmed = 1)';
     reciprocalServicesDatabase.query(sql, [providingUserId], (error, result) => {
         if(error) throw error;
         console.log("completed orders" + result);
