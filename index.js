@@ -164,7 +164,7 @@ app.post('/get-all-orders/:userId', async (req, res) => {
     }
 
     if(orderDirection === 'outgoing'){
-        let sql = 'SELECT * FROM orders WHERE receivingUserId = ? AND status = 1; SELECT * FROM orders WHERE receivingUserId = ? AND status = 2; SELECT * FROM orders WHERE receivingUserId = ? AND status = 3; SELECT * FROM orders WHERE receivingUserId = 4 AND status = ?; SELECT * FROM orders WHERE receivingUserId = ? AND status = 5;';
+        let sql = 'SELECT * FROM orders WHERE receivingUserId = ? AND status = 1; SELECT * FROM orders WHERE receivingUserId = ? AND status = 2; SELECT * FROM orders WHERE receivingUserId = ? AND status = 3; SELECT * FROM orders WHERE receivingUserId = ? AND status = 4; SELECT * FROM orders WHERE receivingUserId = ? AND status = 5;';
 
         reciprocalServicesDatabase.query(sql, [userId, userId, userId, userId, userId], (error, result) => {
             if(error) throw error;
@@ -179,7 +179,7 @@ app.post('/get-all-orders/:userId', async (req, res) => {
     }
 
     if(orderDirection === 'incoming'){
-        let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND status = 1; SELECT * FROM orders WHERE providingUserId = ? AND status = 2; SELECT * FROM orders WHERE providingUserId = ? AND status = 3; SELECT * FROM orders WHERE providingUserId = 4 AND status = ?; SELECT * FROM orders WHERE providingUserId = ? AND status = 5;';
+        let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND status = 1; SELECT * FROM orders WHERE providingUserId = ? AND status = 2; SELECT * FROM orders WHERE providingUserId = ? AND status = 3; SELECT * FROM orders WHERE providingUserId = ? AND status = 4; SELECT * FROM orders WHERE providingUserId = ? AND status = 5;';
 
         reciprocalServicesDatabase.query(sql, [userId, userId, userId, userId, userId], (error, result) => {
             if(error) throw error;
@@ -216,56 +216,35 @@ app.post('/get-orders-with-specific-status-and-direction/:userId', (req, res) =>
     }
 })
 
+app.post('/get-single-order/:userId', (req, res) => {
+
+    const { orderId } = req.body;
+
+    let sql = 'SELECT * FROM orders WHERE id = ?';
+    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
+    if(error) throw error;
+    console.log(result);
+    res.send(result[0]);
+    })
+
+})
+
 
 //update endpoints
 
-app.put('/deny-order/:orderId', (req, res) => {
+app.put('/modify-order-status/:orderId', (req, res) => {
 
-    const { orderId } = req.body;
+    const {status, orderId } = req.body;
 
-    let sql = "UPDATE orders SET status = 5 WHERE id=?";
-    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
+    let sql = "UPDATE orders SET status = ? WHERE id = ?";
+    reciprocalServicesDatabase.query(sql, [status, orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
     })
 })
 
-app.put('/accept-order/:orderId', (req, res) => {
 
-    const { orderId } = req.body;
-
-    let sql = "UPDATE orders SET status = 2 WHERE id=?";
-    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-        res.send(result);
-    })
-})
-
-app.put('/complete-order/:orderId', (req, res) => {
-
-    const { orderId } = req.body;
-
-    let sql = "UPDATE orders SET orderCompleted=1 WHERE id=?";
-    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-        res.send(result);
-    })
-})
-
-app.put('/confirm-order-completion/:orderId', (req, res) => {
-
-    const { orderId } = req.body;
-
-    let sql = "UPDATE orders SET completionConfirmed=1 WHERE id=?";
-    reciprocalServicesDatabase.query(sql, [orderId], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-        res.send(result);
-    })
-})
 
 
 
