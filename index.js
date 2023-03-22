@@ -310,6 +310,34 @@ app.get('/create-service', (req, res) => {
     })
 })
 
+
+app.post('/update-user-specific-services', (req, res) => {
+
+    const {userId, serviceIdsToBeAdded, serviceIdsToBeRemoved} = req.body;
+
+    let postNewServiceSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)"
+
+    let deleteOldServiceSql = "DELETE FROM serviceProviderRelationship WHERE providerId = ? AND serviceId = ?"
+
+    serviceIdsToBeAdded.forEach(id => {
+        reciprocalServicesDatabase.query(postNewServiceSql, [userId, id], (error, result) => {
+            if(error) throw error;
+            console.log(result);
+        })
+    })
+
+    serviceIdsToBeRemoved.forEach(id => {
+        reciprocalServicesDatabase.query(deleteOldServiceSql, [userId, id], (error, result) => {
+            if(error) throw error;
+            console.log(result);
+        })
+    })
+
+    res.send('Services Successfully Updated!')
+})
+    
+
+
 //read endpoints
 
 app.get('/get-superficial-service-details', (req, res) => {
