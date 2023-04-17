@@ -31,6 +31,18 @@ app.use(
     })
   );
 
+
+const resetWeeeklyOrderCount = () => {
+    let sql = "UPDATE services SET weeklyOrderCount = 0";
+
+    reciprocalServicesDatabase.query(sql, (error, result) => {
+        if(error) throw error;
+        console.log(result);
+    })
+}
+  
+setInterval(resetWeeeklyOrderCount, 60000); //604800000 for a week
+
 //USER ENDPOINTS
 
 //creation endpoints
@@ -46,14 +58,11 @@ app.get('/create-user', (req, res) => {
 })
 
 
-
-
-
 //fetching endpoints
 
 app.get('/get-superficial-user-details', (req, res) => {
 
-    let sql = "SELECT id, firstName, lastName, profilePicture FROM users";
+    let sql = "SELECT id, firstName, lastName, profilePicture, rating FROM users";
     reciprocalServicesDatabase.query(sql, (error, result) => {
         if(error) throw error;
         console.log(result);
@@ -93,12 +102,10 @@ app.post('/get-service-specific-users/:serviceId', (req, res) => {
 
 app.put('/update-user', (req, res) => {
 
-    const {
-        firstName
-    } = req.body;
+    const { userId, firstName, lastName, description } = req.body;
 
-    let sql = "INSERT INTO users (firstName, lastName, email) VALUES ('TestDude', 'TestDudenson', 'testdude@mail.com')";
-    reciprocalServicesDatabase.query(sql, (error, result) => {
+    let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ? WHERE id = ?";
+    reciprocalServicesDatabase.query(sql, [firstName, lastName, description, userId], (error, result) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
@@ -137,12 +144,20 @@ app.put('/rate-user', (req, res) => {
 
 app.post('/create-order', (req, res) => {
 
-    const {serviceId, providingUserId, receivingUserId, dateIssued} = req.body;
+    const {serviceId, providingUserId, receivingUserId, dateIssued, message} = req.body;
 
     console.log(`Request Body: ${serviceId, providingUserId, receivingUserId}`);
 
-    let sql = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, status) VALUES (?, ?, ?, ?, 1)";
-    reciprocalServicesDatabase.query(sql, [serviceId, providingUserId, receivingUserId, dateIssued], (error, result) => {
+    let sqlCreateOrder = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, message, status) VALUES (?, ?, ?, ?, ?, 1)";
+
+    let sqlUpdateWeeklyOrderCount = "UPDATE services SET weeklyOrderCount = weeklyOrderCount + 1 WHERE id = ?";
+
+    reciprocalServicesDatabase.query(sqlCreateOrder, [serviceId, providingUserId, receivingUserId, dateIssued, message], (error, result) => {
+        if(error) throw error;
+        console.log(`Result: ${result}`);
+    })
+
+    reciprocalServicesDatabase.query(sqlUpdateWeeklyOrderCount, [serviceId], (error, result) => {
         if(error) throw error;
         console.log(`Result: ${result}`);
         res.send(result);
@@ -302,13 +317,16 @@ app.post('/get-incoming-completed-orders/:userId', (req, res) => {
 
 app.get('/create-service', (req, res) => {
 
-    let sql = "INSERT INTO services (name, description, recommendedCreditsPerHour) VALUES ('Electronics', 'Designing and implementing electrical circuits.', '18')";
+    let sql = "INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES ('Electronics', 'Designing and implementing electrical circuits.', '18')";
     reciprocalServicesDatabase.query(sql, (error, result) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
     })
 })
+
+
+//update endpoints
 
 
 app.post('/update-user-specific-services', (req, res) => {
@@ -382,6 +400,16 @@ app.post('/get-full-service-details/:serviceId', (req, res) => {
         if(error) throw error;
         console.log(result[0]);
         res.send(result[0]);
+    })
+})
+
+app.get('/get-trending-services', (req, res) => {
+
+    let sql = "SELECT * FROM services ORDER BY weeklyOrderCount DESC LIMIT 3";
+    reciprocalServicesDatabase.query(sql, (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
     })
 })
 
