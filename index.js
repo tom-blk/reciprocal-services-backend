@@ -82,15 +82,16 @@ app.post('/get-full-user-details/:userId', (req, res) => {
     })
 })
 
-app.post('/get-service-specific-users/:serviceId', (req, res) => {
+app.post('/get-service-specific-users', (req, res) => {
 
-    const {userId} = req.body;
+    const {serviceId} = req.body;
 
-    let sql = "SELECT * FROM users;";
+    let selectUsersSql = "SELECT * FROM users WHERE id IN (SELECT providerId FROM serviceProviderRelationship WHERE serviceId = ?)";
 
-    reciprocalServicesDatabase.query(sql, [userId], (error, result) => {
+    reciprocalServicesDatabase.query(selectUsersSql, [serviceId], (error, result) => {
         if(error) throw error;
-        console.log('user specific services' + result);
+        console.log(result);
+
         res.send(result);
     })
 })
@@ -365,6 +366,21 @@ app.get('/get-superficial-service-details', (req, res) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
+    })
+})
+
+app.post('/get-service-provider-count', (req, res) => {
+
+    const {serviceId} = req.body
+
+    let sql = "SELECT COUNT(providerId) FROM serviceProviderRelationship WHERE serviceId = ?";
+    reciprocalServicesDatabase.query(sql, [serviceId], (error, result) => {
+        if(error) throw error;
+        console.log(Object.values(result[0])[0]);
+
+        let countedValue = Object.values(result[0])[0];
+
+        res.send({providerCount: countedValue});
     })
 })
 
