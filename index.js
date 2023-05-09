@@ -113,6 +113,18 @@ app.put('/update-user', (req, res) => {
     })
 })
 
+app.put('/update-user-profile-picture', (req, res) => {
+
+    const { userId, profilePicture } = req.body;
+
+    let sql = "UPDATE users SET profilePicture = ? WHERE id = ?";
+    reciprocalServicesDatabase.query(sql, [profilePicture, userId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
+    })
+})
+
 app.put('/rate-user', (req, res) => {
 
     const {userId, rating} = req.body;
@@ -316,10 +328,12 @@ app.post('/get-incoming-completed-orders/:userId', (req, res) => {
 
 //create endpoints
 
-app.get('/create-service', (req, res) => {
+app.post('/create-service', (req, res) => {
 
-    let sql = "INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES ('Electronics', 'Designing and implementing electrical circuits.', '18')";
-    reciprocalServicesDatabase.query(sql, (error, result) => {
+    const { name, description, icon } = req.body;
+
+    let sql = "INSERT INTO services (name, description, icon, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, ?, 0, 0)";
+    reciprocalServicesDatabase.query(sql, [name, description, icon], (error, result) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
@@ -404,6 +418,49 @@ app.post('/get-user-specific-services/:userId', (req, res) => {
         if(error) throw error;
         console.log('user specific services' + result);
         res.send(result);
+    })
+})
+
+app.post('/add-service-to-user-services', (req, res) => {
+
+    const { userId, serviceId } = req.body;
+
+    let sql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)";
+
+    reciprocalServicesDatabase.query(sql, [userId, serviceId], (error, result) => {
+        if(error) throw error;
+        console.log('user specific services' + result);
+        res.send(result);
+    })
+})
+
+app.post('/remove-service-from-user-services', (req, res) => {
+
+    const { userId, serviceId } = req.body;
+
+    let sql = "DELETE FROM serviceProviderRelationship WHERE providerId = ? AND serviceId = ?";
+
+    reciprocalServicesDatabase.query(sql, [userId, serviceId], (error, result) => {
+        if(error) throw error;
+        console.log('user specific services' + result);
+        res.send(result);
+    })
+})
+
+app.post('/get-service-user-affiliation', (req, res) => {
+
+    const { userId, serviceId } = req.body;
+
+    let sql = "SELECT * FROM serviceProviderRelationship WHERE providerId = ? AND serviceId = ?";
+
+    reciprocalServicesDatabase.query(sql, [userId, serviceId], (error, result) => {
+        if(error) throw error;
+        console.log(userId + ' ' + serviceId);
+        if(result.length > 0){
+            res.send(true); 
+        } else {
+            res.send(false); 
+        }
     })
 })
 
