@@ -8,11 +8,11 @@ const bcrypt = require('bcryptjs');
 
 router.post('/register', async (req, res) => {
 
-    const {username, email, password} = req.body;
+    const {username, email, password } = req.body;
 
     let hashedPassword = await bcrypt.hash(password, 8);
 
-    let sql = 'INSERT INTO users (username, email, password) VALUES (?,?,?)';
+    let sql = 'INSERT INTO users (username, email, password, credits, rating, ratingCount) VALUES (?,?,?,0,0,0)';
 
     prometheusDatabase.query(sql, [username, email, hashedPassword], (error, result) => {
         if(error) throw error;
@@ -52,17 +52,23 @@ router.post('/log-in', async (req, res) => {
 
 router.post('/get-user', (req, res) => {
 
-    const {jwt} = req.body;
+    console.log(req.headers.authorization)
+    if (
+        req.headers.authorization &&
+        req.headers.authorization.split("=")[0] === "prometheusUserAuthenticationToken"
+      ) {
+        userId = verifyJWT(req.headers.authorization.split("=")[1]).id;
 
-    userId = verifyJWT(jwt).id;
+        let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription FROM users WHERE id = ?';
 
-    let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription FROM users WHERE id = ?';
-
-    prometheusDatabase.query(sql, [userId], (error, result) => {
-        if(error) throw error;
-        console.log(result[0]);
-        res.send(result[0]);
-    })
+        prometheusDatabase.query(sql, [userId], (error, result) => {
+            if(error) throw error;
+            console.log(result[0]);
+            res.send(result[0]);
+        })
+      } else {
+        res.send(undefined);
+      }  
 })
 
 module.exports = router;

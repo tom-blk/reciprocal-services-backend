@@ -27,6 +27,6 @@ const resetWeeeklyOrderCount = () => {
     })
 }
   
-setInterval(resetWeeeklyOrderCount, 60000); //604800000 for a week
+setInterval(resetWeeeklyOrderCount, 604800000); //Week
 
 module.exports = prometheusDatabase;

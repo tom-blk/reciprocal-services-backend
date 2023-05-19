@@ -2,9 +2,6 @@ const express = require('express');
 const router = express.Router();
 const prometheusDatabase = require('../database/prometheus-db');
 
-
-//OUTGOING
-
 //CREATE
 
 router.post('/create-order', (req, res) => {
@@ -31,7 +28,20 @@ router.post('/create-order', (req, res) => {
 
 //READ
 
-router.post('/get-all-orders/:userId', async (req, res) => {
+router.post('/get-single-order', (req, res) => {
+
+    const { orderId } = req.body;
+
+    let sql = 'SELECT * FROM orders WHERE id = ?';
+    prometheusDatabase.query(sql, [orderId], (error, result) => {
+    if(error) throw error;
+    console.log(result);
+    res.send(result[0]);
+    })
+
+})
+
+router.post('/get-all-orders', async (req, res) => {
 
     const { orderDirection, userId } = req.body;
 
@@ -74,7 +84,7 @@ router.post('/get-all-orders/:userId', async (req, res) => {
     }
 })
 
-router.post('/get-orders-with-specific-status-and-direction/:userId', (req, res) => {
+router.post('/get-orders-with-specific-status-and-direction', (req, res) => {
 
     const {orderDirection, status, userId} = req.body;
 
@@ -96,23 +106,9 @@ router.post('/get-orders-with-specific-status-and-direction/:userId', (req, res)
     }
 })
 
-router.post('/get-single-order/:userId', (req, res) => {
-
-    const { orderId } = req.body;
-
-    let sql = 'SELECT * FROM orders WHERE id = ?';
-    prometheusDatabase.query(sql, [orderId], (error, result) => {
-    if(error) throw error;
-    console.log(result);
-    res.send(result[0]);
-    })
-
-})
-
-
 //UPDATE
 
-router.put('/modify-order-status/:orderId', (req, res) => {
+router.put('/modify-order-status', (req, res) => {
 
     const {status, orderId } = req.body;
 
@@ -124,13 +120,53 @@ router.put('/modify-order-status/:orderId', (req, res) => {
     })
 })
 
+router.put('/transfer-credits', (req, res) => {
 
+    const { numberOfCredits, senderId, recipientId } = req.body;
+
+    let sql = 'SELECT credits FROM users WHERE id = ?';
+
+    prometheusDatabase.query(sql, [recipientId], (error, result) => {
+        if(error) throw error;
+        if(result < 100){
+
+            let newTotalCredits = result+numberOfCredits;
+            let sql = 'UPDATE users SET credits = ? WHERE id = ?';
+
+            prometheusDatabase.query(sql, [newTotalCredits, recipientId], (error, result) => {
+                if(error) throw error;
+                console.log("incoming orders" + result);
+                res.send(result);
+            })
+        }else{
+            let sql = 'UPDATE users SET credits = credits - ? WHERE id = ?; UPDATE users SET credits = credits + ? WHERE id = ?';
+
+            prometheusDatabase.query(sql, [numberOfCredits, senderId, numberOfCredits, recipientId], (error, result) => {
+                if(error) throw error;
+                console.log("incoming orders" + result);
+                res.send(result);
+            })
+        }
+    })
+})
+
+router.put('/specify-hours-provided', (req, res) => {
+
+    const { orderId, hoursProvided } = req.body;
+
+    let sql = "UPDATE orders SET hoursProvided = ? WHERE id = ?";
+    prometheusDatabase.query(sql, [hoursProvided, orderId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
+    })
+})
 
 //INCOMING
 
 //READ
 
-router.post('/get-incoming-orders/:userId', (req, res) => {
+router.post('/get-incoming-orders', (req, res) => {
 
     const { providingUserId } = req.body;
 
@@ -142,7 +178,7 @@ router.post('/get-incoming-orders/:userId', (req, res) => {
     })
 })
 
-router.post('/get-incoming-pending-orders/:userId', (req, res) => {
+router.post('/get-incoming-pending-orders', (req, res) => {
 
     const { providingUserId } = req.body;
 
@@ -154,7 +190,7 @@ router.post('/get-incoming-pending-orders/:userId', (req, res) => {
     })
 })
 
-router.post('/get-incoming-completed-orders/:userId', (req, res) => {
+router.post('/get-incoming-completed-orders', (req, res) => {
 
     const { providingUserId } = req.body;
 

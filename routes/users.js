@@ -3,7 +3,8 @@ const prometheusDatabase = require('../database/prometheus-db');
 const router = express.Router();
 
 
-//CREATE
+//CREATE 
+
 
 router.get('/create-user', (req, res) => {
 
@@ -22,7 +23,7 @@ router.get('/create-user', (req, res) => {
 
 router.post('/get-list', (req, res) => {
 
-    const { userId } = req.body.payload;
+    const { userId } = req.body;
 
     let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating FROM users WHERE id NOT LIKE ?";
 
@@ -35,7 +36,7 @@ router.post('/get-list', (req, res) => {
 
 router.post('/get-single-user', (req, res) => {
 
-    const { userId } = req.body.payload;
+    const { userId } = req.body;
 
     let sql = "SELECT firstName, lastName, userName, profilePicture, rating FROM users WHERE id = ?";
 
@@ -48,11 +49,11 @@ router.post('/get-single-user', (req, res) => {
 
 router.post('/get-user-specific-services', (req, res) => {
 
-    const {userId} = req.body.payload;
+    const {userId} = req.body;
 
-    let sql = "SELECT * FROM services JOIN serviceProviderRelationship ON services.id = serviceProviderRelationship.serviceId WHERE providerId = ?";
+    let sql = "SELECT * FROM (SELECT * FROM services LEFT JOIN serviceProviderRelationship ON services.id = serviceProviderRelationship.serviceId UNION SELECT * FROM services RIGHT JOIN serviceProviderRelationship ON services.id = serviceProviderRelationship.serviceId) userServices WHERE providerId = ? ORDER BY name ASC";
 
-    prometheusDatabase.query(sql, [userId], (error, result) => {
+    prometheusDatabase.query(sql, [userId, userId], (error, result) => {
         if(error) throw error;
         console.log('user specific services' + result);
         res.send(result);
@@ -102,7 +103,7 @@ router.put('/transfer-credits', (req, res) => {
     })
 })
 
-router.put('/update-user-profile-picture', (req, res) => {
+router.put('/update-profile-picture', (req, res) => {
 
     const { userId, profilePicture } = req.body;
 
@@ -134,6 +135,44 @@ router.put('/rate-user', (req, res) => {
         })
     })
 
+})
+
+router.post('/add-service-to-user-services', (req, res) => {
+
+    const { userId, serviceId } = req.body;
+
+    let sql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)";
+
+    prometheusDatabase.query(sql, [userId, serviceId], (error, result) => {
+        if(error) throw error;
+        console.log('user specific services' + result);
+        res.send(result);
+    })
+})
+
+router.post('/update-user-services', (req, res) => {
+
+    const {userId, serviceIdsToBeAdded, serviceIdsToBeRemoved} = req.body;
+
+    let postNewServiceSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)"
+
+    let deleteOldServiceSql = "DELETE FROM serviceProviderRelationship WHERE providerId = ? AND serviceId = ?"
+
+    serviceIdsToBeAdded.forEach(id => {
+        prometheusDatabase.query(postNewServiceSql, [userId, id], (error, result) => {
+            if(error) throw error;
+            console.log(result);
+        })
+    })
+
+    serviceIdsToBeRemoved.forEach(id => {
+        prometheusDatabase.query(deleteOldServiceSql, [userId, id], (error, result) => {
+            if(error) throw error;
+            console.log(result);
+        })
+    })
+
+    res.send('Services Successfully Updated!')
 })
 
 //DELETE

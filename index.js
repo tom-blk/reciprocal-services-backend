@@ -7,6 +7,7 @@ const authRouter = require('./routes/auth');
 const ordersRouter = require('./routes/orders');
 const servicesRouter = require('./routes/services');
 const usersRouter = require('./routes/users');
+const { expressjwt : jwt } = require('express-jwt');
 
 const app = express();
 
@@ -23,6 +24,19 @@ app.use(
     })
 );
 
+const getTokenFct = (req) => {
+  console.log(req.headers.authorization);
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.split("=")[0] === "prometheusUserAuthenticationToken"
+  ) {
+    return req.headers.authorization.split("=")[1];
+  } else {
+    return null;
+  }
+}
+
+app.use(jwt({secret: 'jwtsecret', algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
 
 app.use('/auth', authRouter);
 app.use('/orders', ordersRouter);
