@@ -135,7 +135,6 @@ router.put('/transfer-credits', (req, res) => {
 
             prometheusDatabase.query(sql, [newTotalCredits, recipientId], (error, result) => {
                 if(error) throw error;
-                console.log("incoming orders" + result);
                 res.send(result);
             })
         }else{
@@ -143,7 +142,6 @@ router.put('/transfer-credits', (req, res) => {
 
             prometheusDatabase.query(sql, [numberOfCredits, senderId, numberOfCredits, recipientId], (error, result) => {
                 if(error) throw error;
-                console.log("incoming orders" + result);
                 res.send(result);
             })
         }

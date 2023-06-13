@@ -12,7 +12,7 @@ router.post('/register', async (req, res) => {
 
     let hashedPassword = await bcrypt.hash(password, 8);
 
-    let sql = 'INSERT INTO users (username, email, password, credits, rating, ratingCount) VALUES (?,?,?,0,0,0)';
+    let sql = 'INSERT INTO users (username, email, password, credits, rating, ratingCount, profileDescription) VALUES (?,?,?,0,0,0, "")';
 
     prometheusDatabase.query(sql, [username, email, hashedPassword], (error, result) => {
         if(error) throw error;

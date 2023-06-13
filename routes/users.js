@@ -38,7 +38,7 @@ router.post('/get-single-user', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT firstName, lastName, userName, profilePicture, rating FROM users WHERE id = ?";
+    let sql = "SELECT firstName, lastName, userName, profilePicture, profileDescription, rating FROM users WHERE id = ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
         if(error) throw error;
@@ -82,6 +82,8 @@ router.post('/get-service-user-affiliation', (req, res) => {
 router.put('/update-user', (req, res) => {
 
     const { userId, firstName, lastName, description } = req.body;
+
+    console.log(firstName, lastName);
 
     let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ? WHERE id = ?";
     prometheusDatabase.query(sql, [firstName, lastName, description, userId], (error, result) => {
