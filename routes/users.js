@@ -154,11 +154,13 @@ router.post('/add-service-to-user-services', (req, res) => {
 
 router.post('/update-user-services', (req, res) => {
 
-    const {userId, serviceIdsToBeAdded, serviceIdsToBeRemoved} = req.body;
+    const {userId, serviceIdsToBeAdded, serviceIdsToBeRemoved, changedEmbersPerHourServices} = req.body;
 
     let postNewServiceSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)"
 
     let deleteOldServiceSql = "DELETE FROM serviceProviderRelationship WHERE providerId = ? AND serviceId = ?"
+
+    let updateEmbersPerHourSql = "UPDATE serviceProviderRelationship SET creditsPerHour = ? WHERE EXISTS(SELECT FROM serviceProviderRelationship WHERE providerId = ? and serviceId = ?) "
 
     serviceIdsToBeAdded.forEach(id => {
         prometheusDatabase.query(postNewServiceSql, [userId, id], (error, result) => {
@@ -174,7 +176,27 @@ router.post('/update-user-services', (req, res) => {
         })
     })
 
+    changedEmbersPerHourServices.forEach(service => {
+        prometheusDatabase.query(updateEmbersPerHourSql, [service.embersPerHour, userId, service.id], (error, result) => {
+            if(error) throw error;
+            console.log(result);
+        })
+    })
+
     res.send('Services Successfully Updated!')
+})
+
+router.put('/update-embers-per-hour', (req, res) => {
+
+    const {userId, serviceId, embersPerHour} = req.body;
+
+    let postNewServiceSql = "UPDATE serviceProviderRelationship SET creditsPerHour = ? WHERE providerId = ? AND serviceId = ?"
+
+    prometheusDatabase.query(postNewServiceSql, [embersPerHour, userId, serviceId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send('Embers per Hour Successfully Updated!')
+    })
 })
 
 //DELETE
