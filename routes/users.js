@@ -162,9 +162,6 @@ router.post('/update-user-services', (req, res) => {
 
     let updateEmbersPerHourSql = "UPDATE serviceProviderRelationship SET creditsPerHour = ? WHERE providerId = ? AND serviceId = ?"
 
-    console.log('Services to be changed: ')
-    console.log(servicesToBeChanged)
-
     if(servicesToBeChanged)
     servicesToBeChanged.forEach(service => {
         if(service.isSelected)
