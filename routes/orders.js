@@ -112,6 +112,8 @@ router.put('/modify-order-status', (req, res) => {
 
     const {status, orderId } = req.body;
 
+    console.log('Order status: ' + status + ', Order id: ' + orderId);
+
     let sql = "UPDATE orders SET status = ? WHERE id = ?";
     prometheusDatabase.query(sql, [status, orderId], (error, result) => {
         if(error) throw error;

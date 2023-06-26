@@ -154,29 +154,32 @@ router.post('/add-service-to-user-services', (req, res) => {
 
 router.post('/update-user-services', (req, res) => {
 
-    const {userId, serviceIdsToBeAdded, serviceIdsToBeRemoved, changedEmbersPerHourServices} = req.body;
+    const {userId, servicesToBeChanged} = req.body;
 
     let postNewServiceSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)"
 
     let deleteOldServiceSql = "DELETE FROM serviceProviderRelationship WHERE providerId = ? AND serviceId = ?"
 
-    let updateEmbersPerHourSql = "UPDATE serviceProviderRelationship SET creditsPerHour = ? WHERE EXISTS(SELECT FROM serviceProviderRelationship WHERE providerId = ? and serviceId = ?) "
+    let updateEmbersPerHourSql = "UPDATE serviceProviderRelationship SET creditsPerHour = ? WHERE providerId = ? AND serviceId = ?"
 
-    serviceIdsToBeAdded.forEach(id => {
-        prometheusDatabase.query(postNewServiceSql, [userId, id], (error, result) => {
+    console.log('Services to be changed: ')
+    console.log(servicesToBeChanged)
+
+    if(servicesToBeChanged)
+    servicesToBeChanged.forEach(service => {
+        if(service.isSelected)
+        prometheusDatabase.query(postNewServiceSql, [userId, service.id], (error, result) => {
             if(error) throw error;
             console.log(result);
         })
-    })
 
-    serviceIdsToBeRemoved.forEach(id => {
-        prometheusDatabase.query(deleteOldServiceSql, [userId, id], (error, result) => {
+        if(!service.isSelected)
+        prometheusDatabase.query(deleteOldServiceSql, [userId, service.id], (error, result) => {
             if(error) throw error;
             console.log(result);
         })
-    })
 
-    changedEmbersPerHourServices.forEach(service => {
+        if(service.embersPerHourChanged)
         prometheusDatabase.query(updateEmbersPerHourSql, [service.embersPerHour, userId, service.id], (error, result) => {
             if(error) throw error;
             console.log(result);
