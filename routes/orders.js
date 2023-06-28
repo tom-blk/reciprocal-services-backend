@@ -6,15 +6,15 @@ const prometheusDatabase = require('../database/prometheus-db');
 
 router.post('/create-order', (req, res) => {
 
-    const {serviceId, providingUserId, receivingUserId, dateIssued, message} = req.body;
+    const {serviceId, providingUserId, receivingUserId, creditsPerHour, dateIssued, message} = req.body;
 
     console.log(`Request Body: ${serviceId, providingUserId, receivingUserId}`);
 
-    let sqlCreateOrder = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, message, status) VALUES (?, ?, ?, ?, ?, 1)";
+    let sqlCreateOrder = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, message, status, creditsPerHour) VALUES (?, ?, ?, ?, ?, 1, ?)";
 
     let sqlUpdateWeeklyOrderCount = "UPDATE services SET weeklyOrderCount = weeklyOrderCount + 1 WHERE id = ?";
 
-    prometheusDatabase.query(sqlCreateOrder, [serviceId, providingUserId, receivingUserId, dateIssued, message], (error, result) => {
+    prometheusDatabase.query(sqlCreateOrder, [serviceId, providingUserId, receivingUserId, dateIssued, message, creditsPerHour], (error, result) => {
         if(error) throw error;
         console.log(`Result: ${result}`);
     })
@@ -122,35 +122,7 @@ router.put('/modify-order-status', (req, res) => {
     })
 })
 
-router.put('/transfer-credits', (req, res) => {
-
-    const { numberOfCredits, senderId, recipientId } = req.body;
-
-    let sql = 'SELECT credits FROM users WHERE id = ?';
-
-    prometheusDatabase.query(sql, [recipientId], (error, result) => {
-        if(error) throw error;
-        if(result < 100){
-
-            let newTotalCredits = result+numberOfCredits;
-            let sql = 'UPDATE users SET credits = ? WHERE id = ?';
-
-            prometheusDatabase.query(sql, [newTotalCredits, recipientId], (error, result) => {
-                if(error) throw error;
-                res.send(result);
-            })
-        }else{
-            let sql = 'UPDATE users SET credits = credits - ? WHERE id = ?; UPDATE users SET credits = credits + ? WHERE id = ?';
-
-            prometheusDatabase.query(sql, [numberOfCredits, senderId, numberOfCredits, recipientId], (error, result) => {
-                if(error) throw error;
-                res.send(result);
-            })
-        }
-    })
-})
-
-router.put('/specify-hours-provided', (req, res) => {
+router.put('/specify-provided-hours', (req, res) => {
 
     const { orderId, hoursProvided } = req.body;
 
@@ -158,6 +130,20 @@ router.put('/specify-hours-provided', (req, res) => {
     prometheusDatabase.query(sql, [hoursProvided, orderId], (error, result) => {
         if(error) throw error;
         console.log(result);
+        res.send(result);
+    })
+})
+
+router.put('/confirm-order-completion-rate-user-and-transfer-credits', (req, res) => {
+
+    const { dateCompleted, orderId, recipientId, senderId, numberOfCredits, rating } = req.body;
+
+    console.log(rating);
+
+    let sql = 'UPDATE orders SET status = 4, dateCompleted = ? WHERE id = ?; UPDATE users SET rating = (rating*ratingCount+?)/(ratingCount+1), ratingCount = ratingCount+1 WHERE id = ?; UPDATE users SET credits = credits - ? WHERE id = ?; UPDATE users SET credits = credits + ? WHERE id = ?';
+
+    prometheusDatabase.query(sql, [dateCompleted, orderId, rating, recipientId, numberOfCredits, senderId, numberOfCredits, recipientId], (error, result) => {
+        if(error) throw error;
         res.send(result);
     })
 })

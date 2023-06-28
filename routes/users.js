@@ -25,7 +25,7 @@ router.post('/get-list', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating FROM users WHERE id NOT LIKE ?";
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating, ratingCount FROM users WHERE id NOT LIKE ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
         if(error) throw error;
@@ -38,7 +38,7 @@ router.post('/get-single-user', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT firstName, lastName, userName, profilePicture, profileDescription, rating FROM users WHERE id = ?";
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, profileDescription, rating FROM users WHERE id = ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
         if(error) throw error;

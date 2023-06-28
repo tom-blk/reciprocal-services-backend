@@ -57,7 +57,7 @@ router.post('/get-service-specific-users', (req, res) => {
 
     const {serviceId} = req.body;
 
-    let selectUsersSql = "SELECT * FROM users WHERE id IN (SELECT providerId FROM serviceProviderRelationship WHERE serviceId = ?) ORDER BY rating DESC";
+    let selectUsersSql = "SELECT id, userName, firstName, lastName, email, profileDescription, profilePicture, rating, ratingCount, serviceId, creditsPerHour FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? ORDER BY rating DESC";
 
     prometheusDatabase.query(selectUsersSql, [serviceId], (error, result) => {
         if(error) throw error;
