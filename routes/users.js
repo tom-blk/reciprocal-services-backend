@@ -141,11 +141,11 @@ router.put('/rate-user', (req, res) => {
 
 router.post('/add-service-to-user-services', (req, res) => {
 
-    const { userId, serviceId } = req.body;
+    const { userId, serviceId, creditsPerHour } = req.body;
 
-    let sql = "INSERT INTO serviceProviderRelationship (providerId, serviceId) VALUES (?, ?)";
+    let sql = "INSERT INTO serviceProviderRelationship (providerId, serviceId, creditsPerHour) VALUES (?, ?, ?)";
 
-    prometheusDatabase.query(sql, [userId, serviceId], (error, result) => {
+    prometheusDatabase.query(sql, [userId, serviceId, creditsPerHour], (error, result) => {
         if(error) throw error;
         console.log('user specific services' + result);
         res.send(result);
