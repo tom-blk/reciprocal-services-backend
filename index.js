@@ -8,6 +8,7 @@ const ordersRouter = require('./routes/orders');
 const servicesRouter = require('./routes/services');
 const usersRouter = require('./routes/users');
 const { expressjwt : jwt } = require('express-jwt');
+const dotenv = require('dotenv');
 
 const app = express();
 
@@ -16,6 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cookieParser());
 
 app.use(bodyParser.json());
+
+dotenv.config({ path:'./.env' })
 
 app.use(
     cors({
@@ -36,7 +39,9 @@ const getTokenFct = (req) => {
   }
 }
 
-app.use(jwt({secret: 'jwtsecret', algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
+
+app.use(jwt({secret: process.env.JWT_SECRET, algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
+
 
 app.use('/auth', authRouter);
 app.use('/orders', ordersRouter);

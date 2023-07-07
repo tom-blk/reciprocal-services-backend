@@ -31,15 +31,14 @@ router.post('/log-in', async (req, res) => {
 
     prometheusDatabase.query(sql, [email], (error, result) => {
         if(error) throw error;
-        console.log(result[0]);
         if(result.length<1){
-            res.send('No User Found.');
+            res.status(401).send('No User With That Email Found.');
         } else if(result.length>1){
-            res.send('Something went wrong.');
+            res.status(401).send('Something went wrong.');
         } else {
             bcrypt.compare(password, result[0].password).then(match => {
                 if(!match){
-                    res.send(new Error('Wrong Password'))
+                    res.status(401).send('Password does not match.')
                 } else {
                     const userAuthenticationToken = createJWT(result[0].id, result[0].username);
                     console.log(userAuthenticationToken);
@@ -62,12 +61,11 @@ router.post('/get-user', (req, res) => {
         let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription FROM users WHERE id = ?';
 
         prometheusDatabase.query(sql, [userId], (error, result) => {
-            if(error) throw error;
-            console.log(result[0]);
+            if(error) res.status(401).send('Something Went Wrong, Please Try Again.')
             res.send(result[0]);
         })
       } else {
-        res.send(undefined);
+        res.status(401).send('No Authorization Token, Please Log In Again.')
       }  
 })
 

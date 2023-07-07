@@ -22,8 +22,9 @@ router.post('/create-order', (req, res) => {
     prometheusDatabase.query(sqlUpdateWeeklyOrderCount, [serviceId], (error, result) => {
         if(error) throw error;
         console.log(`Result: ${result}`);
-        res.send(result);
     })
+
+    res.status(200).send('Order Successfully Placed!')
 })
 
 //READ
@@ -115,10 +116,9 @@ router.put('/modify-order-status', (req, res) => {
     console.log('Order status: ' + status + ', Order id: ' + orderId);
 
     let sql = "UPDATE orders SET status = ? WHERE id = ?";
-    prometheusDatabase.query(sql, [status, orderId], (error, result) => {
+    prometheusDatabase.query(sql, [status, orderId], (error) => {
         if(error) throw error;
-        console.log(result);
-        res.send(result);
+        res.status(200).send('Order Successfully Updated!');
     })
 })
 
@@ -127,10 +127,9 @@ router.put('/specify-provided-hours', (req, res) => {
     const { orderId, hoursProvided } = req.body;
 
     let sql = "UPDATE orders SET hoursProvided = ? WHERE id = ?";
-    prometheusDatabase.query(sql, [hoursProvided, orderId], (error, result) => {
+    prometheusDatabase.query(sql, [hoursProvided, orderId], (error) => {
         if(error) throw error;
-        console.log(result);
-        res.send(result);
+        res.status(200).send('Provided Hours Successfully Updated!');
     })
 })
 
@@ -144,7 +143,7 @@ router.put('/confirm-order-completion-rate-user-and-transfer-credits', (req, res
 
     prometheusDatabase.query(sql, [dateCompleted, orderId, rating, recipientId, numberOfCredits, senderId, numberOfCredits, recipientId], (error, result) => {
         if(error) throw error;
-        res.send(result);
+        res.status(200).send(`The Provider Was Rated With ${rating} Stars And Paid ${numberOfCredits} Credits, The Order Is Now Complete!`);
     })
 })
 
@@ -159,7 +158,6 @@ router.post('/get-incoming-orders', (req, res) => {
     let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 0 AND orderCompleted = 0 AND completionConfirmed = 0)';
     prometheusDatabase.query(sql, [providingUserId], (error, result) => {
         if(error) throw error;
-        console.log("incoming orders" + result);
         res.send(result);
     })
 })
@@ -171,7 +169,6 @@ router.post('/get-incoming-pending-orders', (req, res) => {
     let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND completionConfirmed = 0)';
     prometheusDatabase.query(sql, [providingUserId], (error, result) => {
         if(error) throw error;
-        console.log("pending orders" + result);
         res.send(result);
     })
 })
@@ -183,7 +180,6 @@ router.post('/get-incoming-completed-orders', (req, res) => {
     let sql = 'SELECT * FROM orders WHERE providingUserId = ? AND (transactionOrdered = 1 AND orderConfirmed = 1 AND orderCompleted = 1 AND completionConfirmed = 1)';
     prometheusDatabase.query(sql, [providingUserId], (error, result) => {
         if(error) throw error;
-        console.log("completed orders" + result);
         res.send(result);
     })
 })
