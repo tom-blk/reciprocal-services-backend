@@ -28,15 +28,7 @@ app.use(
 );
 
 const getTokenFct = (req) => {
-  console.log(req.headers.authorization);
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.split("=")[0] === "prometheusUserAuthenticationToken"
-  ) {
-    return req.headers.authorization.split("=")[1];
-  } else {
-    return null;
-  }
+    return req.cookies.prometheusUserAuthenticationToken;
 }
 
 

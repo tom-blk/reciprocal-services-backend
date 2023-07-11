@@ -4,8 +4,6 @@ const prometheusDatabase = require('../database/prometheus-db');
 const { createJWT, verifyJWT } = require('../jwt/jwt');
 const bcrypt = require('bcryptjs');
 
-//CREATE
-
 router.post('/register', async (req, res) => {
 
     const {username, email, password } = req.body;
@@ -20,8 +18,6 @@ router.post('/register', async (req, res) => {
         res.send(result[0]);
     })
 })
-
-//READ
 
 router.post('/log-in', async (req, res) => {
 
@@ -41,22 +37,21 @@ router.post('/log-in', async (req, res) => {
                     res.status(401).send('Password does not match.')
                 } else {
                     const userAuthenticationToken = createJWT(result[0].id, result[0].username);
-                    console.log(userAuthenticationToken);
-                    res.send(userAuthenticationToken);
+                    res.cookie('prometheusUserAuthenticationToken', userAuthenticationToken, {maxAge: 1000*60*60*24*7, httpOnly: true}).send('Login Credentials Were Sent In Response Header.');
                 }
             }) 
         }
     })
 })
 
+router.post('/log-out', async (req, res) => {
+    res.cookie('prometheusUserAuthenticationToken', 0, {maxAge: 0, httpOnly: true}).send('User Was Logged Out.');
+})
+
 router.post('/get-user', (req, res) => {
 
-    console.log(req.headers.authorization)
-    if (
-        req.headers.authorization &&
-        req.headers.authorization.split("=")[0] === "prometheusUserAuthenticationToken"
-      ) {
-        userId = verifyJWT(req.headers.authorization.split("=")[1]).id;
+    if(req.cookies.prometheusUserAuthenticationToken){
+        userId = verifyJWT(req.cookies.prometheusUserAuthenticationToken).id;
 
         let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription FROM users WHERE id = ?';
 
@@ -64,9 +59,7 @@ router.post('/get-user', (req, res) => {
             if(error) res.status(401).send('Something Went Wrong, Please Try Again.')
             res.send(result[0]);
         })
-      } else {
-        res.status(401).send('No Authorization Token, Please Log In Again.')
-      }  
+    }
 })
 
 module.exports = router;

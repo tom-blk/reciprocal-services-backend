@@ -3,8 +3,6 @@ const dotenv = require('dotenv');
 
 dotenv.config({ path:'./.env' })
 
-console.log(process.env.JWT_SECRET)
-
 const createJWT = (id, username) => {
     const userAuthenticationToken = sign(
         {id: id, username: username}, 
