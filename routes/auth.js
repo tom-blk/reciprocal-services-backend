@@ -53,7 +53,7 @@ router.post('/get-user', (req, res) => {
     if(req.cookies.prometheusUserAuthenticationToken){
         userId = verifyJWT(req.cookies.prometheusUserAuthenticationToken).id;
 
-        let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription FROM users WHERE id = ?';
+        let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription, location, travelRadius FROM users WHERE id = ?';
 
         prometheusDatabase.query(sql, [userId], (error, result) => {
             if(error) res.status(401).send('Something Went Wrong, Please Try Again.')

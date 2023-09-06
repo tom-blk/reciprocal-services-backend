@@ -13,7 +13,7 @@ router.post('/create-service', (req, res) => {
     prometheusDatabase.query(sql, [name, description, icon], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.send(result);
+        res.status(200).send({successMessage: `Service ${name} Successfully Created!`});
     })
 })
 

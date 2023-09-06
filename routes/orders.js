@@ -24,7 +24,7 @@ router.post('/create-order', (req, res) => {
         console.log(`Result: ${result}`);
     })
 
-    res.status(200).send('Order Successfully Placed!')
+    res.status(200).send({message: 'Order Successfully Placed!'})
 })
 
 //READ
@@ -118,7 +118,7 @@ router.put('/modify-order-status', (req, res) => {
     let sql = "UPDATE orders SET status = ? WHERE id = ?";
     prometheusDatabase.query(sql, [status, orderId], (error) => {
         if(error) throw error;
-        res.status(200).send('Order Successfully Updated!');
+        res.status(200).send({message: 'Order Successfully Updated!'});
     })
 })
 
@@ -129,7 +129,7 @@ router.put('/specify-provided-hours', (req, res) => {
     let sql = "UPDATE orders SET hoursProvided = ? WHERE id = ?";
     prometheusDatabase.query(sql, [hoursProvided, orderId], (error) => {
         if(error) throw error;
-        res.status(200).send('Provided Hours Successfully Updated!');
+        res.status(200).send({message: 'Provided Hours Successfully Updated!'});
     })
 })
 
@@ -143,7 +143,7 @@ router.put('/confirm-order-completion-rate-user-and-transfer-credits', (req, res
 
     prometheusDatabase.query(sql, [dateCompleted, orderId, rating, recipientId, numberOfCredits, senderId, numberOfCredits, recipientId], (error, result) => {
         if(error) throw error;
-        res.status(200).send(`The Provider Was Rated With ${rating} Stars And Paid ${numberOfCredits} Credits, The Order Is Now Complete!`);
+        res.status(200).send({message: `The Provider Was Rated With ${rating} Stars And Paid ${numberOfCredits} Credits, The Order Is Now Complete!`});
     })
 })
 

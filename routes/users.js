@@ -14,7 +14,7 @@ router.get('/create-user', (req, res) => {
     prometheusDatabase.query(sql, [firstName, lastName, email], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.send(result);
+        res.status(200).send({successMessage: 'Account Successfully Created'});
     })
 })
 
@@ -25,7 +25,7 @@ router.post('/get-list', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating, ratingCount FROM users WHERE id NOT LIKE ?";
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating, ratingCount, location, travelRadius FROM users WHERE id NOT LIKE ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
         if(error) throw error;
@@ -38,7 +38,7 @@ router.post('/get-single-user', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT id, firstName, lastName, userName, profilePicture, profileDescription, rating FROM users WHERE id = ?";
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, profileDescription, rating, location, travelRadius FROM users WHERE id = ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
         if(error) throw error;
@@ -81,15 +81,16 @@ router.post('/get-service-user-affiliation', (req, res) => {
 
 router.put('/update-user', (req, res) => {
 
-    const { userId, firstName, lastName, description } = req.body;
+    const { userId, firstName, lastName, description, location, travelRadius } = req.body;
 
-    console.log(firstName, lastName);
+    console.log(location);
+    console.log(travelRadius);
 
-    let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ? WHERE id = ?";
-    prometheusDatabase.query(sql, [firstName, lastName, description, userId], (error, result) => {
+    let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ?, location = ?, travelRadius = ? WHERE id = ?";
+    prometheusDatabase.query(sql, [firstName, lastName, description, location, travelRadius, userId], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.send(result);
+        res.status(200).send({successMessage: 'Profile Successfully Updated!'});
     })
 })
 
@@ -101,7 +102,7 @@ router.put('/transfer-credits', (req, res) => {
     prometheusDatabase.query(sql, [amount, debitorId, amount, creditorId], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.send(result);
+        res.status(200).send({successMessage: 'Embers Successfully Transferred!'});
     })
 })
 
@@ -113,7 +114,7 @@ router.put('/update-profile-picture', (req, res) => {
     prometheusDatabase.query(sql, [profilePicture, userId], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.send(result);
+        res.status(200).send({successMessage: 'Profile Picture Successfully Updated!'});
     })
 })
 
@@ -133,7 +134,7 @@ router.put('/rate-user', (req, res) => {
         prometheusDatabase.query(updateSql, [newRating, newRatingCount, userId], (error, result) => {
             if(error) throw error;
             console.log(result);
-            res.send(result);
+            res.status(200).send({successMessage: 'User Successfully Rated!'});
         })
     })
 
@@ -148,7 +149,7 @@ router.post('/add-service-to-user-services', (req, res) => {
     prometheusDatabase.query(sql, [userId, serviceId, creditsPerHour], (error, result) => {
         if(error) throw error;
         console.log('user specific services' + result);
-        res.send(result);
+        res.status(200).send({successMessage: 'Service Successfully Added!'});
     })
 })
 
@@ -183,7 +184,7 @@ router.post('/update-user-services', (req, res) => {
         })
     })
 
-    res.send('Services Successfully Updated!')
+    res.status(200).send({successMessage: 'Services Successfully Updated!'});
 })
 
 router.put('/update-embers-per-hour', (req, res) => {
@@ -195,7 +196,7 @@ router.put('/update-embers-per-hour', (req, res) => {
     prometheusDatabase.query(postNewServiceSql, [embersPerHour, userId, serviceId], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.send('Embers per Hour Successfully Updated!')
+        res.status(200).send({successMessage: 'Embers Per Hour Successfully Updated!'});
     })
 })
 
@@ -210,7 +211,7 @@ router.post('/remove-service-from-user-services', (req, res) => {
     prometheusDatabase.query(sql, [userId, serviceId], (error, result) => {
         if(error) throw error;
         console.log('user specific services' + result);
-        res.send(result);
+        res.status(200).send({successMessage: 'Service Successfully Updated!'});
     })
 })
 
