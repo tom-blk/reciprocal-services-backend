@@ -7,6 +7,7 @@ const authRouter = require('./routes/auth');
 const ordersRouter = require('./routes/orders');
 const servicesRouter = require('./routes/services');
 const usersRouter = require('./routes/users');
+const countriesRouter = require('./routes/countries');
 const { expressjwt : jwt } = require('express-jwt');
 const dotenv = require('dotenv');
 
@@ -39,6 +40,7 @@ app.use('/auth', authRouter);
 app.use('/orders', ordersRouter);
 app.use('/services', servicesRouter);
 app.use('/users', usersRouter);
+app.use('/countries', countriesRouter);
 
 app.listen('5000', () => {
     console.log('Server started on port 5000')

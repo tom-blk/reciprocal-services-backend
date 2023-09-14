@@ -10,7 +10,7 @@ router.get('/create-user', (req, res) => {
 
     const { firstName, lastName, email } = req.body;
 
-    let sql = "INSERT INTO users (firstName, lastName, email, credits, rating) VALUES (?, ?, ?, 100, 0)";
+    let sql = "INSERT INTO users (firstName, lastName, email, credits, rating, travellingForOrders) VALUES (?, ?, ?, 100, 0, 0)";
     prometheusDatabase.query(sql, [firstName, lastName, email], (error, result) => {
         if(error) throw error;
         console.log(result);
@@ -25,9 +25,22 @@ router.post('/get-list', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating, ratingCount, location, travelRadius FROM users WHERE id NOT LIKE ?";
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating, ratingCount, country, postCode, city, travellingForOrders FROM users WHERE id NOT LIKE ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        res.send(result);
+    })
+})
+
+router.post('/get-users-in-location', (req, res) => {
+
+    const { userId, countryId, postCode } = req.body;
+
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, rating, ratingCount, country, postCode, city, travellingForOrders FROM users WHERE id NOT LIKE ? AND country = ? AND postCode = ?";
+
+    prometheusDatabase.query(sql, [userId, countryId, postCode], (error, result) => {
         if(error) throw error;
         console.log(result);
         res.send(result);
@@ -38,7 +51,7 @@ router.post('/get-single-user', (req, res) => {
 
     const { userId } = req.body;
 
-    let sql = "SELECT id, firstName, lastName, userName, profilePicture, profileDescription, rating, location, travelRadius FROM users WHERE id = ?";
+    let sql = "SELECT id, firstName, lastName, userName, profilePicture, profileDescription, rating, ratingCount, country, postCode, city, travellingForOrders FROM users WHERE id = ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
         if(error) throw error;
@@ -81,13 +94,10 @@ router.post('/get-service-user-affiliation', (req, res) => {
 
 router.put('/update-user', (req, res) => {
 
-    const { userId, firstName, lastName, description, location, travelRadius } = req.body;
+    const { userId, firstName, lastName, description, country, postCode, city, travellingForOrders } = req.body;
 
-    console.log(location);
-    console.log(travelRadius);
-
-    let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ?, location = ?, travelRadius = ? WHERE id = ?";
-    prometheusDatabase.query(sql, [firstName, lastName, description, location, travelRadius, userId], (error, result) => {
+    let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ?, country = ?, postCode = ?, city = ?, travellingForOrders = ? WHERE id = ?";
+    prometheusDatabase.query(sql, [firstName, lastName, description, country, postCode, city, travellingForOrders, userId], (error, result) => {
         if(error) throw error;
         console.log(result);
         res.status(200).send({successMessage: 'Profile Successfully Updated!'});
