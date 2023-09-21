@@ -13,8 +13,31 @@ router.post('/create-service', (req, res) => {
     prometheusDatabase.query(sql, [name, description, icon], (error, result) => {
         if(error) throw error;
         console.log(result);
-        res.status(200).send({successMessage: `Service ${name} Successfully Created!`});
+        res.status(200).send({serviceId: result.insertId, successMessage: `Service ${name} Successfully Created!`});
     })
+})
+
+router.post('/create-service-and-add-to-user-services', (req, res) => {
+
+    const { name, description, icon, userId, creditsPerHour } = req.body;
+
+    console.log(`Credits per hour: ${creditsPerHour}`)
+
+    let createServiceSql = "INSERT INTO services (name, description, icon, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, ?, 0, 0)";
+
+    let addToUserServicesSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId, creditsPerHour) VALUES (?, ?, ?)";
+
+    prometheusDatabase.query(createServiceSql, [name, description, icon], (error, result) => {
+        if(error) throw error;
+        console.log(result);
+        prometheusDatabase.query(addToUserServicesSql, [userId, result.insertId, creditsPerHour], (error2, result2) => {
+            if(error2) throw error2;
+            console.log(result2);
+            res.status(200).send({successMessage: `Service ${name} Successfully Created and Added to Your Services !`});
+        })
+    })
+
+    
 })
 
 //READ

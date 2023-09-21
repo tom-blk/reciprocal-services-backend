@@ -60,6 +60,19 @@ router.post('/get-single-user', (req, res) => {
     })
 })
 
+router.post('/get-user-country', (req, res) => {
+
+    const { countryId } = req.body;
+
+    let sql = "SELECT name FROM countries WHERE id = ?";
+
+    prometheusDatabase.query(sql, [countryId], (error, result) => {
+        if(error) throw error;
+        console.log(result[0]);
+        res.send(result[0]);
+    })
+})
+
 router.post('/get-user-specific-services', (req, res) => {
 
     const {userId} = req.body;
