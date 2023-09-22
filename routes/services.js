@@ -106,11 +106,11 @@ router.post('/get-service-specific-users', (req, res) => {
 
 router.post('/get-local-service-specific-users', (req, res) => {
 
-    const { serviceId, country, postCode } = req.body;
+    const { serviceId, country, postCode, userId } = req.body;
 
-    let selectUsersSql = "SELECT id, userName, firstName, lastName, email, profileDescription, profilePicture, rating, ratingCount, serviceId, creditsPerHour FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ? ORDER BY rating DESC";
+    let selectUsersSql = "SELECT id, userName, firstName, lastName, email, profileDescription, profilePicture, rating, ratingCount, serviceId, creditsPerHour FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ? AND id NOT LIKE ? ORDER BY rating DESC";
 
-    prometheusDatabase.query(selectUsersSql, [serviceId, country, postCode], (error, result) => {
+    prometheusDatabase.query(selectUsersSql, [serviceId, country, postCode, userId], (error, result) => {
         if(error) throw error;
         console.log(result);
 
@@ -135,11 +135,11 @@ router.post('/get-service-provider-count', (req, res) => {
 
 router.post('/get-local-service-provider-count', (req, res) => {
 
-    const {serviceId, country, postCode} = req.body;
+    const {serviceId, country, postCode, userId} = req.body;
 
-    let sql = "SELECT COUNT(providerId) FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ? ORDER BY rating DESC";
+    let sql = "SELECT COUNT(providerId) FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ? AND id NOT LIKE ?";
 
-    prometheusDatabase.query(sql, [serviceId, country, postCode], (error, result) => {
+    prometheusDatabase.query(sql, [serviceId, country, postCode, userId], (error, result) => {
         if(error) throw error;
         console.log(Object.values(result[0])[0]);
 
