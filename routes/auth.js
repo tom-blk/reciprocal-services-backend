@@ -48,7 +48,7 @@ router.post('/log-out', async (req, res) => {
     res.cookie('prometheusUserAuthenticationToken', 0, {maxAge: 0, httpOnly: true}).send('User Was Logged Out.');
 })
 
-router.post('/get-user', (req, res) => {
+router.get('/get-user', (req, res) => {
 
     if(req.cookies.prometheusUserAuthenticationToken){
         userId = verifyJWT(req.cookies.prometheusUserAuthenticationToken).id;
