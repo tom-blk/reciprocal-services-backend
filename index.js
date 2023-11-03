@@ -23,7 +23,7 @@ dotenv.config({ path:'./.env' })
 
 app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "https://prometheus.on.fleek.co",
       credentials: true,
     })
 );
