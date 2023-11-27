@@ -4,10 +4,10 @@ const dotenv = require('dotenv');
 dotenv.config({ path:'./.env' })
 
 const prometheusDatabase = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'prometheus-backend',
-    password : 'öh$WAGH§QZ&JIW$=ua',
-    database : 'prometheus-db',
+    host     : process.env.DATABASE_HOST,
+    user     : process.env.DATABASE_USERNAME,
+    password : process.env.DATABASE_PASSWORD,
+    database : process.env.DATABASE,
     multipleStatements: true
 });
 

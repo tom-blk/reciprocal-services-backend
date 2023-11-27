@@ -11,6 +11,7 @@ module.exports = {
     log_file: 'combined.log',
     time: true,
     env: {
+      "NODE_ENV":"production"
     },
   }],
 };
