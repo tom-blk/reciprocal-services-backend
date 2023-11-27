@@ -23,7 +23,7 @@ dotenv.config({ path:'./.env' })
 
 app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "https://frontend.prometheus-backend.top",
       credentials: true,
     })
 );
@@ -32,8 +32,7 @@ const getTokenFct = (req) => {
     return req.cookies.prometheusUserAuthenticationToken;
 }
 
-
-app.use(jwt({secret: process.env.JWT_SECRET, algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
+app.use(jwt({secret: "secret", algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
 
 
 app.use('/auth', authRouter);
@@ -42,7 +41,7 @@ app.use('/services', servicesRouter);
 app.use('/users', usersRouter);
 app.use('/countries', countriesRouter);
 
-app.listen('5000', () => {
+app.listen(5000, '127.0.0.1', () => {
     console.log('Server started on port 5000')
 });
 

@@ -6,7 +6,7 @@ dotenv.config({ path:'./.env' })
 const createJWT = (id, username) => {
     const userAuthenticationToken = sign(
         {id: id, username: username}, 
-        process.env.JWT_SECRET
+        'secret'
     );
 
     return userAuthenticationToken;
@@ -16,7 +16,7 @@ const verifyJWT = (jwt) => {
     if(!jwt) return new Error('No Authentication Token, Please Log In!');
 
     try{
-        const correctToken = verify(jwt, process.env.JWT_SECRET);
+        const correctToken = verify(jwt, 'secret');
         return correctToken;
     } catch(error){
         return new Error('Wrong Authentication Token, Please Log In Again.')
