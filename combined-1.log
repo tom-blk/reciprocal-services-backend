@@ -1,0 +1,9 @@
+2023-11-09T10:58:04: Server started on port 5000
+2023-11-09T10:58:04: Connected to reciprocal-services-database.
+2023-11-09T10:58:25: UnauthorizedError: No authorization token was found
+    at new UnauthorizedError (/home/GitHub/reciprocal-services-backend/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)
+    at /home/GitHub/reciprocal-services-backend/node_modules/express-jwt/dist/index.js:114:39
+    at step (/home/GitHub/reciprocal-services-backend/node_modules/express-jwt/dist/index.js:33:23)
+    at Object.next (/home/GitHub/reciprocal-services-backend/node_modules/express-jwt/dist/index.js:14:53)
+    at fulfilled (/home/GitHub/reciprocal-services-backend/node_modules/express-jwt/dist/index.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

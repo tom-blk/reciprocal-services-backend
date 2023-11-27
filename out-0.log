@@ -1,0 +1,4505 @@
+2023-11-09T10:59:31: Server started on port 5000
+2023-11-09T10:59:31: Connected to reciprocal-services-database.
+2023-11-09T12:25:50: Server started on port 5000
+2023-11-09T12:25:51: Connected to reciprocal-services-database.
+2023-11-09T12:32:24: Server started on port 5000
+2023-11-09T12:32:24: Connected to reciprocal-services-database.
+2023-11-09T12:48:43: undefined
+2023-11-09T13:26:43: Server started on port 5000
+2023-11-09T13:26:43: Connected to reciprocal-services-database.
+2023-11-09T13:27:10: testuser2@mail.com
+2023-11-09T13:27:13: 
+2023-11-09T13:33:28: Server started on port 5000
+2023-11-09T13:33:28: Connected to reciprocal-services-database.
+2023-11-09T13:33:35: Server started on port 5000
+2023-11-09T13:33:35: Connected to reciprocal-services-database.
+2023-11-09T13:33:52: testuser2@mail.com
+2023-11-09T13:36:40: Server started on port 5000
+2023-11-09T13:36:40: Connected to reciprocal-services-database.
+2023-11-09T13:36:51: testuser2@mail.com
+2023-11-09T13:37:01: testuser2@mail.com
+2023-11-09T13:52:39: 
+2023-11-09T13:52:56: testuser2@mail.com
+2023-11-09T14:21:18: Server started on port 5000
+2023-11-09T14:21:18: Connected to reciprocal-services-database.
+2023-11-09T14:21:36: testuser2@mail.com
+2023-11-09T14:22:24: testuser2@mail.com
+2023-11-09T14:22:26: testuser2@mail.com
+2023-11-09T14:26:56: Server started on port 5000
+2023-11-09T14:26:56: Connected to reciprocal-services-database.
+2023-11-09T14:27:12: testuser2@mail.com
+2023-11-09T14:28:12: testuser2@mail.com
+2023-11-09T14:28:17: testuser2@mail.com
+2023-11-09T14:29:26: 
+2023-11-09T14:29:36: testuser2@mail.com
+2023-11-09T14:31:43: Server started on port 5000
+2023-11-09T14:31:44: Connected to reciprocal-services-database.
+2023-11-09T14:31:59: testuser2@mail.com
+2023-11-09T14:32:59: testuser2@mail.com
+2023-11-09T14:34:15: testuser2@mail.com
+2023-11-09T14:34:49: 
+2023-11-09T14:35:02: testuser2@mail.com
+2023-11-09T14:42:49: testuser2@mail.com
+2023-11-09T14:44:54: Server started on port 5000
+2023-11-09T14:44:54: Connected to reciprocal-services-database.
+2023-11-09T14:45:10: testuser2@mail.com
+2023-11-10T10:35:02: testuser2@mail.com
+2023-11-10T10:35:05: testuser2@mail.com
+2023-11-10T10:35:24: testuser2@mail.com
+2023-11-10T10:35:24: testuser2@mail.com
+2023-11-10T10:35:24: testuser2@mail.com
+2023-11-10T10:35:29: testuser2@mail.com
+2023-11-10T10:35:29: testuser2@mail.com
+2023-11-10T10:35:29: testuser2@mail.com
+2023-11-10T10:37:39: testuser2@mail.com
+2023-11-10T10:37:49: testuser2@mail.com
+2023-11-10T10:41:16: testuser2@mail.com
+2023-11-10T11:42:41: Server started on port 5000
+2023-11-10T11:42:41: Connected to reciprocal-services-database.
+2023-11-10T11:43:05: testuser2@mail.com
+2023-11-10T11:43:47: testuser2@mail.com
+2023-11-10T11:49:41: testuser2@mail.com
+2023-11-10T11:50:01: testuser2@mail.com
+2023-11-10T11:55:16: testuser2@mail.com
+2023-11-10T12:47:38: Server started on port 5000
+2023-11-10T12:47:38: Connected to reciprocal-services-database.
+2023-11-10T12:47:54: testuser2@mail.com
+2023-11-10T12:50:56: Server started on port 5000
+2023-11-10T12:50:56: Connected to reciprocal-services-database.
+2023-11-10T12:51:07: 14
+2023-11-10T12:51:07: []
+2023-11-10T12:51:07: actionable incoming orders
+2023-11-10T12:51:07: actionable outgoing orders
+2023-11-10T12:51:18: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:51:18: []
+2023-11-10T12:51:23: []
+2023-11-10T12:51:23: actionable incoming orders
+2023-11-10T12:51:23: actionable outgoing orders
+2023-11-10T12:51:52: user specific services
+2023-11-10T12:51:52: undefined
+2023-11-10T12:52:09: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:52:09: user specific services
+2023-11-10T12:52:52: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-10T12:52:52: 14
+2023-11-10T12:52:52: user specific services
+2023-11-10T12:52:52: undefined
+2023-11-10T12:53:00: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:53:00: []
+2023-11-10T12:53:02: []
+2023-11-10T12:53:06: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:53:06: []
+2023-11-10T12:53:59: Credits per hour: 11
+2023-11-10T12:53:59: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 55,
+  info: '',
+  serverStatus: 2,
+  warningStatus: 0
+}
+2023-11-10T12:53:59: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: '',
+  serverStatus: 2,
+  warningStatus: 0
+}
+2023-11-10T12:54:17: 14
+2023-11-10T12:54:17: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T12:54:17: actionable incoming orders
+2023-11-10T12:54:17: actionable outgoing orders
+2023-11-10T12:54:17: 0
+2023-11-10T12:54:19: 0
+2023-11-10T12:54:29: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T12:54:29: actionable incoming orders
+2023-11-10T12:54:29: actionable outgoing orders
+2023-11-10T12:54:29: 0
+2023-11-10T12:54:36: user specific services[object Object]
+2023-11-10T12:54:36: { name: 'Afghanistan' }
+2023-11-10T12:54:36: 0
+2023-11-10T12:54:39: order incoming,,,,
+2023-11-10T12:54:40: order outgoing,,,,
+2023-11-10T12:54:41: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:54:41: []
+2023-11-10T12:54:43: 0
+2023-11-10T12:54:44: user specific services[object Object]
+2023-11-10T12:54:44: { name: 'Afghanistan' }
+2023-11-10T12:54:44: 0
+2023-11-10T12:54:45: user specific services[object Object]
+2023-11-10T12:54:45: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:54:45: 0
+2023-11-10T12:54:49: user specific services[object Object]
+2023-11-10T12:54:50: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:54:50: user specific services[object Object]
+2023-11-10T12:54:50: 0
+2023-11-10T12:54:53: user specific services[object Object]
+2023-11-10T12:54:53: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:54:54: 0
+2023-11-10T12:57:16: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T12:57:16: actionable outgoing orders
+2023-11-10T12:57:16: actionable incoming orders
+2023-11-10T12:57:16: 0
+2023-11-10T12:57:21: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:57:21: []
+2023-11-10T12:57:35: testuser@mail.com
+2023-11-10T12:57:35: 13
+2023-11-10T12:57:35: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:57:35: []
+2023-11-10T12:57:38: undefined
+2023-11-10T12:57:38: user specific services
+2023-11-10T12:57:40: user specific services
+2023-11-10T12:57:40: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:58:21: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: '',
+  serverStatus: 2,
+  warningStatus: 0
+}
+2023-11-10T12:58:21: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 34,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-10T12:58:22: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:58:22: user specific services[object Object]
+2023-11-10T12:58:22: user specific services[object Object]
+2023-11-10T12:58:22: 0
+2023-11-10T12:58:49: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-10T12:58:49: 13
+2023-11-10T12:58:49: user specific services[object Object]
+2023-11-10T12:58:49: undefined
+2023-11-10T12:58:49: 1
+2023-11-10T12:58:53: 1
+2023-11-10T12:58:54: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T12:58:54: [
+  {
+    id: 14,
+    firstName: 'Test',
+    lastName: 'User',
+    userName: 'testuser2',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    country: 1,
+    postCode: '11111',
+    city: 'Boras',
+    travellingForOrders: null
+  }
+]
+2023-11-10T13:00:57: undefined
+2023-11-10T13:01:15: testuser3@mail.com
+2023-11-10T13:01:15: 15
+2023-11-10T13:01:15: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T13:01:16: actionable incoming orders
+2023-11-10T13:01:16: actionable outgoing orders
+2023-11-10T13:01:16: 0
+2023-11-10T13:01:28: 0
+2023-11-10T13:01:32: user specific services
+2023-11-10T13:01:32: undefined
+2023-11-10T13:01:38: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T13:01:38: []
+2023-11-10T13:01:44: 0
+2023-11-10T13:01:46: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T13:01:46: []
+2023-11-10T13:06:28: 0
+2023-11-10T13:06:30: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' }
+]
+2023-11-10T13:06:30: []
+2023-11-10T13:06:41: 15
+2023-11-10T13:06:42: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T13:06:42: actionable incoming orders
+2023-11-10T13:06:42: actionable outgoing orders
+2023-11-10T13:06:42: 0
+2023-11-10T15:19:21: 15
+2023-11-10T15:19:21: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T15:19:22: actionable incoming orders
+2023-11-10T15:19:22: actionable outgoing orders
+2023-11-10T15:19:22: 0
+2023-11-10T15:19:27: 15
+2023-11-10T15:19:27: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T15:19:28: actionable incoming orders
+2023-11-10T15:19:28: actionable outgoing orders
+2023-11-10T15:19:28: 0
+2023-11-10T15:19:32: 15
+2023-11-10T15:19:32: actionable incoming orders
+2023-11-10T15:19:32: actionable outgoing orders
+2023-11-10T15:19:32: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T15:19:32: 0
+2023-11-10T15:19:41: 15
+2023-11-10T15:19:41: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T15:19:41: actionable outgoing orders
+2023-11-10T15:19:41: actionable incoming orders
+2023-11-10T15:19:41: 0
+2023-11-10T15:19:44: 15
+2023-11-10T15:19:45: actionable incoming orders
+2023-11-10T15:19:45: actionable outgoing orders
+2023-11-10T15:19:45: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-10T15:19:45: 0
+2023-11-10T15:19:50: 15
+2023-11-10T15:19:52: 15
+2023-11-10T15:19:54: 15
+2023-11-10T15:19:55: 15
+2023-11-10T15:19:57: 15
+2023-11-11T09:52:50: 15
+2023-11-11T09:52:53: 15
+2023-11-11T12:35:52: 15
+2023-11-11T17:53:00: 15
+2023-11-11T19:39:36: 15
+2023-11-11T19:39:55: testuser2@mail.com
+2023-11-11T19:40:04: testuser2@mail.com
+2023-11-11T19:40:15: testuser2@mail.com
+2023-11-11T19:40:55: testuser2@mail.com
+2023-11-11T19:41:05: testuser2@mail.com
+2023-11-11T19:42:42: 
+2023-11-11T19:42:42: 
+2023-11-11T19:42:43: 
+2023-11-13T16:35:26: 15
+2023-11-13T16:35:48: testuser2@mail.com
+2023-11-13T16:35:49: testuser2@mail.com
+2023-11-13T16:35:50: testuser2@mail.com
+2023-11-13T16:35:50: testuser2@mail.com
+2023-11-13T16:35:50: testuser2@mail.com
+2023-11-13T16:36:49: testuser2@mail.com
+2023-11-14T23:24:59: 15
+2023-11-16T09:28:17: 13
+2023-11-16T09:29:06: 13
+2023-11-16T12:30:44: 15
+2023-11-16T12:40:44: 13
+2023-11-17T12:50:58: Server started on port 5000
+2023-11-17T12:50:58: Connected to reciprocal-services-database.
+2023-11-20T11:06:17: testuser@mail.com
+2023-11-20T11:06:26: testuser@mail.com
+2023-11-20T12:48:08: Server started on port 5000
+2023-11-20T12:48:08: Connected to reciprocal-services-database.
+2023-11-20T12:48:29: testuser@mail.com
+2023-11-20T12:48:30: 13
+2023-11-20T12:48:30: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-20T12:48:30: actionable incoming orders
+2023-11-20T12:48:30: actionable outgoing orders
+2023-11-20T12:48:30: 1
+2023-11-20T12:48:56: user specific services[object Object]
+2023-11-20T12:48:56: { name: 'Afghanistan' }
+2023-11-20T12:48:56: 1
+2023-11-20T12:49:01: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-20T12:49:01: user specific services[object Object]
+2023-11-20T12:49:01: 1
+2023-11-20T12:51:12: undefined
+2023-11-20T12:51:23: blk.public@proton.me
+2023-11-20T12:51:23: 16
+2023-11-20T12:51:23: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-20T12:51:23: actionable incoming orders
+2023-11-20T12:51:23: actionable outgoing orders
+2023-11-20T12:51:23: 0
+2023-11-20T12:51:27: user specific services
+2023-11-20T12:51:27: undefined
+2023-11-20T12:51:31: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-20T12:51:31: user specific services
+2023-11-20T12:54:15: Server started on port 5000
+2023-11-20T12:54:15: Connected to reciprocal-services-database.
+2023-11-20T12:55:01: 16
+2023-11-20T12:55:01: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-20T12:55:01: actionable incoming orders
+2023-11-20T12:55:01: actionable outgoing orders
+2023-11-20T12:55:01: 0
+2023-11-20T12:55:04: user specific services
+2023-11-20T12:55:04: undefined
+2023-11-20T12:55:07: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-20T12:55:07: user specific services
+2023-11-20T12:55:51: Server started on port 5000
+2023-11-20T12:55:51: Connected to reciprocal-services-database.
+2023-11-22T11:06:10: 16
+2023-11-22T11:06:30: testuser@mail.com
+2023-11-22T11:06:50: testuser@mail.com
+2023-11-22T11:19:57: testuser@mail.com
+2023-11-22T12:00:38: testuser@mail.com
+2023-11-22T12:23:48: Server started on port 5000
+2023-11-22T12:23:48: Connected to reciprocal-services-database.
+2023-11-22T12:23:53: Server started on port 5000
+2023-11-22T12:23:53: Connected to reciprocal-services-database.
+2023-11-22T12:24:08: 16
+2023-11-22T12:24:08: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T12:24:08: actionable incoming orders
+2023-11-22T12:24:08: actionable outgoing orders
+2023-11-22T12:24:09: 0
+2023-11-22T12:24:32: user specific services
+2023-11-22T12:24:32: undefined
+2023-11-22T12:24:35: user specific services
+2023-11-22T12:24:35: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:25:19: blk.public@proton.me
+2023-11-22T12:25:19: 16
+2023-11-22T12:25:19: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:25:19: user specific services
+2023-11-22T12:26:35: Server started on port 5000
+2023-11-22T12:26:35: Connected to reciprocal-services-database.
+2023-11-22T12:37:50: Server started on port 5000
+2023-11-22T12:37:50: Connected to reciprocal-services-database.
+2023-11-22T12:38:09: 166
+2023-11-22T12:38:11: Server started on port 5000
+2023-11-22T12:38:11: Connected to reciprocal-services-database.
+2023-11-22T12:43:57: 16
+2023-11-22T12:43:57: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T12:43:57: actionable incoming orders
+2023-11-22T12:43:57: actionable outgoing orders
+2023-11-22T12:43:57: 0
+2023-11-22T12:44:00: user specific services
+2023-11-22T12:44:00: undefined
+2023-11-22T12:44:01: user specific services
+2023-11-22T12:44:01: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:44:19: 16
+2023-11-22T12:44:19: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T12:44:19: actionable incoming orders
+2023-11-22T12:44:19: actionable outgoing orders
+2023-11-22T12:44:19: 0
+2023-11-22T12:44:26: undefined
+2023-11-22T12:44:26: user specific services
+2023-11-22T12:44:30: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:44:30: user specific services
+2023-11-22T12:44:58: 166
+2023-11-22T12:44:58: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-22T12:44:58: 16
+2023-11-22T12:44:58: undefined
+2023-11-22T12:44:58: user specific services
+2023-11-22T12:45:19: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:45:19: []
+2023-11-22T12:45:22: user specific services
+2023-11-22T12:45:22: { name: 'Sweden' }
+2023-11-22T12:45:32: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:45:32: user specific services
+2023-11-22T12:46:10: 166
+2023-11-22T12:46:10: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-22T12:46:10: 16
+2023-11-22T12:46:10: user specific services
+2023-11-22T12:46:10: { name: 'Sweden' }
+2023-11-22T12:46:27: 0
+2023-11-22T12:46:35: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:46:35: []
+2023-11-22T12:46:39: order outgoing,,,,
+2023-11-22T12:46:43: order incoming,,,,
+2023-11-22T12:46:45: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T12:46:45: actionable outgoing orders
+2023-11-22T12:46:45: actionable incoming orders
+2023-11-22T12:46:45: 0
+2023-11-22T12:53:29: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:53:29: []
+2023-11-22T12:56:44: undefined
+2023-11-22T12:56:59: kobold@spellweaver.de
+2023-11-22T12:57:09: kobold@spellweaver.de
+2023-11-22T12:57:09: 17
+2023-11-22T12:57:10: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T12:57:10: actionable incoming orders
+2023-11-22T12:57:10: actionable outgoing orders
+2023-11-22T12:57:10: 0
+2023-11-22T12:57:19: user specific services
+2023-11-22T12:57:19: undefined
+2023-11-22T12:57:30: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:57:30: user specific services
+2023-11-22T12:58:34: 166
+2023-11-22T12:58:34: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-22T12:58:34: 17
+2023-11-22T12:58:34: undefined
+2023-11-22T12:58:34: user specific services
+2023-11-22T12:58:39: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T12:58:39: [
+  {
+    id: 16,
+    firstName: 'Tom',
+    lastName: 'Bleek',
+    userName: 'admin',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: null
+  }
+]
+2023-11-22T12:59:18: 0
+2023-11-22T13:00:19: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 56,
+  info: '',
+  serverStatus: 2,
+  warningStatus: 0
+}
+2023-11-22T13:00:44: 17
+2023-11-22T13:00:45: [
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  },
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null }
+]
+2023-11-22T13:00:45: actionable incoming orders
+2023-11-22T13:00:45: actionable outgoing orders
+2023-11-22T13:00:45: 0
+2023-11-22T13:00:45: 0
+2023-11-22T13:01:12: user specific services
+2023-11-22T13:01:12: { name: 'Sweden' }
+2023-11-22T13:01:19: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T13:01:19: user specific services
+2023-11-22T13:01:24: user specific services
+2023-11-22T13:01:42: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: '',
+  serverStatus: 2,
+  warningStatus: 0
+}
+2023-11-22T13:01:42: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 1  Warnings: 0',
+  serverStatus: 34,
+  warningStatus: 0,
+  changedRows: 1
+}
+2023-11-22T13:01:42: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T13:01:42: user specific services[object Object]
+2023-11-22T13:01:42: user specific services[object Object]
+2023-11-22T13:01:42: 0
+2023-11-22T13:01:47: 166
+2023-11-22T13:01:47: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: 'Rows matched: 1  Changed: 0  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 0
+}
+2023-11-22T13:01:47: 17
+2023-11-22T13:01:47: user specific services[object Object]
+2023-11-22T13:01:47: { name: 'Sweden' }
+2023-11-22T13:01:47: 0
+2023-11-22T13:01:56: 0
+2023-11-22T13:01:56: 0
+2023-11-22T13:02:06: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T13:02:06: [
+  {
+    id: 16,
+    firstName: 'Tom',
+    lastName: 'Bleek',
+    userName: 'admin',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: null
+  }
+]
+2023-11-22T13:03:06: 0
+2023-11-22T13:03:06: 1
+2023-11-22T13:03:07: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T13:03:07: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T13:03:08: user specific services[object Object]
+2023-11-22T13:03:08: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:03:08: { name: 'Sweden' }
+2023-11-22T13:04:11: Request Body: 16
+2023-11-22T13:04:12: Server started on port 5000
+2023-11-22T13:04:13: Connected to reciprocal-services-database.
+2023-11-22T13:04:19: order outgoing,,,,
+2023-11-22T13:04:22: 0
+2023-11-22T13:04:22: 1
+2023-11-22T13:04:22: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T13:04:23: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T13:04:23: order outgoing,,,,
+2023-11-22T13:04:29: order incoming,,,,
+2023-11-22T13:04:30: order outgoing,,,,
+2023-11-22T13:04:34: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T13:04:34: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T13:04:35: 0
+2023-11-22T13:04:35: 1
+2023-11-22T13:04:37: serviceId: 56
+2023-11-22T13:04:37: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 0
+}
+2023-11-22T13:04:37: [
+  {
+    id: 17,
+    userName: 'Doris',
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    email: 'kobold@spellweaver.de',
+    profileDescription: '',
+    profilePicture: null,
+    rating: 0,
+    ratingCount: 0,
+    serviceId: 56,
+    creditsPerHour: 10
+  }
+]
+2023-11-22T13:04:37: 16 56
+2023-11-22T13:04:37: country: 166
+2023-11-22T13:04:37: { 'AVG(creditsPerHour)': '10.0000' }
+2023-11-22T13:05:28: Request Body: 16
+2023-11-22T13:05:28: Result: [object Object]
+2023-11-22T13:05:28: Result: [object Object]
+2023-11-22T13:05:34: order outgoing[object Object],,,,
+2023-11-22T13:05:34: serviceId: 56
+2023-11-22T13:05:34: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:05:34: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:06:13: order incoming[object Object],,,,
+2023-11-22T13:06:13: serviceId: 56
+2023-11-22T13:06:13: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:06:13: {
+  id: 16,
+  firstName: 'Tom',
+  lastName: 'Bleek',
+  userName: 'admin',
+  profilePicture: null,
+  profileDescription: 'Admin here, send me your improvement suggestions to blk.public@proton.me !',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: null
+}
+2023-11-22T13:06:29: [
+  {
+    id: 6113,
+    serviceId: 56,
+    providingUserId: 17,
+    receivingUserId: 16,
+    hoursProvided: null,
+    creditsAwarded: null,
+    dateIssued: '2023-11-22 13:05:28',
+    dateCompleted: null,
+    status: 1,
+    message: 'Hej Doris,\n' +
+      '\n' +
+      'jag skulle vilja beställa tio Wafflor för imorgon.\n' +
+      '\n' +
+      'Tack pa förehand och vänliga häsningar,\n' +
+      '\n' +
+      'Tom',
+    creditsPerHour: 10
+  }
+]
+2023-11-22T13:06:30: serviceId: 56
+2023-11-22T13:06:30: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:06:30: {
+  id: 16,
+  firstName: 'Tom',
+  lastName: 'Bleek',
+  userName: 'admin',
+  profilePicture: null,
+  profileDescription: 'Admin here, send me your improvement suggestions to blk.public@proton.me !',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: null
+}
+2023-11-22T13:07:13: Order status: 2, Order id: 6113
+2023-11-22T13:07:13: serviceId: 56
+2023-11-22T13:07:13: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:07:13: {
+  id: 16,
+  firstName: 'Tom',
+  lastName: 'Bleek',
+  userName: 'admin',
+  profilePicture: null,
+  profileDescription: 'Admin here, send me your improvement suggestions to blk.public@proton.me !',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: null
+}
+2023-11-22T13:07:40: Order status: 3, Order id: 6113
+2023-11-22T13:07:41: {
+  id: 16,
+  firstName: 'Tom',
+  lastName: 'Bleek',
+  userName: 'admin',
+  profilePicture: null,
+  profileDescription: 'Admin here, send me your improvement suggestions to blk.public@proton.me !',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: null
+}
+2023-11-22T13:07:41: serviceId: 56
+2023-11-22T13:07:41: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:08:16: user specific services[object Object]
+2023-11-22T13:08:16: { name: 'Sweden' }
+2023-11-22T13:08:16: 0
+2023-11-22T13:08:50: 17
+2023-11-22T13:16:19: 16
+2023-11-22T13:16:19: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T13:16:19: actionable incoming orders
+2023-11-22T13:16:20: actionable outgoing orders[object Object]
+2023-11-22T13:16:20: 1
+2023-11-22T13:16:20: 0
+2023-11-22T13:16:20: serviceId: 56
+2023-11-22T13:16:20: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:16:20: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:16:21: order incoming,,,,
+2023-11-22T13:16:22: serviceId: 56
+2023-11-22T13:16:22: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:16:22: order outgoing,,[object Object],,
+2023-11-22T13:16:22: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:16:23: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:16:31: 16
+2023-11-22T13:17:58: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:18:07: 16
+2023-11-22T13:18:07: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T13:18:07: actionable incoming orders
+2023-11-22T13:18:08: actionable outgoing orders[object Object]
+2023-11-22T13:18:08: 1
+2023-11-22T13:18:08: 0
+2023-11-22T13:18:08: serviceId: 56
+2023-11-22T13:18:08: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:18:08: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:18:09: order incoming,,,,
+2023-11-22T13:18:10: 16
+2023-11-22T13:18:12: serviceId: 56
+2023-11-22T13:18:12: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:18:12: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:18:12: order outgoing,,[object Object],,
+2023-11-22T13:18:13: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 0,
+  ratingCount: 0,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:18:15: 5
+2023-11-22T13:18:28: 16
+2023-11-22T13:18:28: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T13:18:28: actionable incoming orders
+2023-11-22T13:18:28: actionable outgoing orders
+2023-11-22T13:18:28: 1
+2023-11-22T13:18:28: 0
+2023-11-22T13:18:30: order outgoing,,,[object Object],
+2023-11-22T13:18:30: serviceId: 56
+2023-11-22T13:18:30: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T13:18:30: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T13:18:32: 16
+2023-11-22T14:43:57: 16
+2023-11-22T14:43:57: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T14:43:57: actionable incoming orders
+2023-11-22T14:43:57: actionable outgoing orders
+2023-11-22T14:43:57: 1
+2023-11-22T14:43:57: 0
+2023-11-22T14:44:06: 1
+2023-11-22T14:44:06: 0
+2023-11-22T14:44:07: 16
+2023-11-22T14:44:07: 1
+2023-11-22T14:44:07: 0
+2023-11-22T14:44:08: 16
+2023-11-22T14:44:08: 1
+2023-11-22T14:44:08: 0
+2023-11-22T14:44:11: 16
+2023-11-22T14:44:11: 1
+2023-11-22T14:44:11: 0
+2023-11-22T14:44:12: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T14:44:12: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T14:44:14: 16
+2023-11-22T14:44:14: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T14:44:14: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T14:44:14: 16
+2023-11-22T14:44:15: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T14:44:15: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T14:44:16: order outgoing,,,[object Object],
+2023-11-22T14:44:16: serviceId: 56
+2023-11-22T14:44:16: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:44:16: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:44:17: 16
+2023-11-22T14:44:17: order outgoing,,,[object Object],
+2023-11-22T14:44:17: serviceId: 56
+2023-11-22T14:44:17: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:44:17: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:52:53: 1
+2023-11-22T14:52:53: 0
+2023-11-22T14:53:13: serviceId: 55
+2023-11-22T14:53:13: {
+  id: 55,
+  name: 'Testservice',
+  description: "Let's see what this does...",
+  icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei',
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 0
+}
+2023-11-22T14:53:13: []
+2023-11-22T14:53:13: 16 55
+2023-11-22T14:53:13: country: 166
+2023-11-22T14:53:13: { 'AVG(creditsPerHour)': null }
+2023-11-22T14:53:14: 1
+2023-11-22T14:53:14: 0
+2023-11-22T14:53:15: serviceId: 56
+2023-11-22T14:53:15: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:53:15: [
+  {
+    id: 17,
+    userName: 'Doris',
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    email: 'kobold@spellweaver.de',
+    profileDescription: '',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    serviceId: 56,
+    creditsPerHour: 10
+  }
+]
+2023-11-22T14:53:15: 16 56
+2023-11-22T14:53:15: country: 166
+2023-11-22T14:53:15: { 'AVG(creditsPerHour)': '10.0000' }
+2023-11-22T14:53:19: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T14:53:19: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T14:53:20: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:53:20: user specific services[object Object]
+2023-11-22T14:53:20: { name: 'Sweden' }
+2023-11-22T14:53:31: Request Body: 16
+2023-11-22T14:53:33: Server started on port 5000
+2023-11-22T14:53:33: Connected to reciprocal-services-database.
+2023-11-22T14:53:36: serviceId: 56
+2023-11-22T14:53:36: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:53:36: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:53:36: order outgoing,,,[object Object],
+2023-11-22T14:53:38: 16
+2023-11-22T14:53:38: order outgoing,,,[object Object],
+2023-11-22T14:53:38: serviceId: 56
+2023-11-22T14:53:38: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:53:38: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:53:51: order incoming,,,,
+2023-11-22T14:53:52: order outgoing,,,[object Object],
+2023-11-22T14:53:52: serviceId: 56
+2023-11-22T14:53:52: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:53:52: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:53:59: 16
+2023-11-22T14:53:59: order outgoing,,,[object Object],
+2023-11-22T14:53:59: serviceId: 56
+2023-11-22T14:53:59: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T14:53:59: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:54:00: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T14:54:00: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T14:54:05: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T14:54:05: user specific services[object Object]
+2023-11-22T14:54:05: { name: 'Sweden' }
+2023-11-22T14:54:13: Request Body: 16
+2023-11-22T14:54:14: Server started on port 5000
+2023-11-22T14:54:14: Connected to reciprocal-services-database.
+2023-11-22T15:01:51: 16
+2023-11-22T15:01:51: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T15:01:51: user specific services[object Object]
+2023-11-22T15:01:51: { name: 'Sweden' }
+2023-11-22T15:06:49: 1
+2023-11-22T15:06:49: 0
+2023-11-22T15:06:51: serviceId: 56
+2023-11-22T15:06:51: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-22T15:06:51: [
+  {
+    id: 17,
+    userName: 'Doris',
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    email: 'kobold@spellweaver.de',
+    profileDescription: '',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    serviceId: 56,
+    creditsPerHour: 10
+  }
+]
+2023-11-22T15:06:51: 16 56
+2023-11-22T15:06:51: country: 166
+2023-11-22T15:06:51: { 'AVG(creditsPerHour)': '10.0000' }
+2023-11-22T15:07:06: [
+  { id: 1, name: 'Afghanistan' },
+  { id: 2, name: 'Albania' },
+  { id: 3, name: 'Algeria' },
+  { id: 4, name: 'Andorra' },
+  { id: 5, name: 'Angola' },
+  { id: 6, name: 'Antigua and Barbuda' },
+  { id: 7, name: 'Argentina' },
+  { id: 8, name: 'Armenia' },
+  { id: 9, name: 'Australia' },
+  { id: 10, name: 'Austria' },
+  { id: 11, name: 'Azerbaijan' },
+  { id: 12, name: 'Bahamas' },
+  { id: 13, name: 'Bahrain' },
+  { id: 14, name: 'Bangladesh' },
+  { id: 15, name: 'Barbados' },
+  { id: 16, name: 'Belarus' },
+  { id: 17, name: 'Belgium' },
+  { id: 18, name: 'Belize' },
+  { id: 19, name: 'Benin' },
+  { id: 20, name: 'Bhutan' },
+  { id: 21, name: 'Bolivia' },
+  { id: 22, name: 'Bosnia and Herzegovina' },
+  { id: 23, name: 'Botswana' },
+  { id: 24, name: 'Brazil' },
+  { id: 25, name: 'Brunei' },
+  { id: 26, name: 'Bulgaria' },
+  { id: 27, name: 'Burkina Faso' },
+  { id: 28, name: 'Burundi' },
+  { id: 30, name: 'Cabo Verde' },
+  { id: 31, name: 'Cambodia' },
+  { id: 32, name: 'Cameroon' },
+  { id: 33, name: 'Canada' },
+  { id: 34, name: 'Central African Republic' },
+  { id: 35, name: 'Chad' },
+  { id: 36, name: 'Chile' },
+  { id: 37, name: 'China' },
+  { id: 38, name: 'Colombia' },
+  { id: 39, name: 'Comoros' },
+  { id: 40, name: 'Congo' },
+  { id: 41, name: 'Costa Rica' },
+  { id: 42, name: "Cote d'Ivoire" },
+  { id: 43, name: 'Croatia' },
+  { id: 44, name: 'Cuba' },
+  { id: 45, name: 'Cyprus' },
+  { id: 46, name: 'Czechia' },
+  { id: 47, name: 'Denmark' },
+  { id: 48, name: 'Djibouti' },
+  { id: 49, name: 'Dominica' },
+  { id: 50, name: 'Dominican Republic' },
+  { id: 51, name: 'Ecuador' },
+  { id: 52, name: 'Egypt' },
+  { id: 53, name: 'El Salvador' },
+  { id: 194, name: 'England' },
+  { id: 54, name: 'Equatorial Guinea' },
+  { id: 55, name: 'Eritrea' },
+  { id: 56, name: 'Estonia' },
+  { id: 57, name: 'Eswatini' },
+  { id: 58, name: 'Ethiopia' },
+  { id: 59, name: 'Fiji' },
+  { id: 60, name: 'Finland' },
+  { id: 61, name: 'France' },
+  { id: 62, name: 'Gabon' },
+  { id: 63, name: 'Gambia' },
+  { id: 64, name: 'Georgia' },
+  { id: 65, name: 'Germany' },
+  { id: 66, name: 'Ghana' },
+  { id: 67, name: 'Greece' },
+  { id: 68, name: 'Grenada' },
+  { id: 69, name: 'Guatemala' },
+  { id: 70, name: 'Guinea' },
+  { id: 71, name: 'Guinea-Bissau' },
+  { id: 72, name: 'Guyana' },
+  { id: 73, name: 'Haiti' },
+  { id: 74, name: 'Honduras' },
+  { id: 75, name: 'Hungary' },
+  { id: 76, name: 'Iceland' },
+  { id: 77, name: 'India' },
+  { id: 78, name: 'Indonesia' },
+  { id: 79, name: 'Iran' },
+  { id: 80, name: 'Iraq' },
+  { id: 81, name: 'Ireland' },
+  { id: 82, name: 'Israel' },
+  { id: 83, name: 'Italy' },
+  { id: 84, name: 'Jamaica' },
+  { id: 85, name: 'Japan' },
+  { id: 86, name: 'Jordan' },
+  { id: 87, name: 'Kazakhstan' },
+  { id: 88, name: 'Kenya' },
+  { id: 89, name: 'Kiribati' },
+  { id: 90, name: 'Kosovo' },
+  { id: 91, name: 'Kuwait' },
+  { id: 92, name: 'Kyrgyzstan' },
+  { id: 93, name: 'Laos' },
+  { id: 94, name: 'Latvia' },
+  { id: 95, name: 'Lebanon' },
+  { id: 96, name: 'Lesotho' },
+  { id: 97, name: 'Liberia' },
+  { id: 98, name: 'Libya' },
+  { id: 99, name: 'Liechtenstein' },
+  { id: 100, name: 'Lithuania' },
+  ... 96 more items
+]
+2023-11-22T15:07:06: [
+  {
+    id: 17,
+    firstName: 'Doris ',
+    lastName: 'Habeck',
+    userName: 'Doris',
+    profilePicture: null,
+    rating: 5,
+    ratingCount: 1,
+    country: 166,
+    postCode: '51395',
+    city: 'Fristad',
+    travellingForOrders: 0
+  }
+]
+2023-11-22T15:07:07: user specific services[object Object]
+2023-11-22T15:07:07: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T15:07:07: { name: 'Sweden' }
+2023-11-22T16:06:39: 16
+2023-11-22T16:06:39: user specific services[object Object]
+2023-11-22T16:06:39: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T16:06:39: { name: 'Sweden' }
+2023-11-22T16:06:40: 16
+2023-11-22T16:06:40: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T16:06:40: actionable incoming orders
+2023-11-22T16:06:40: actionable outgoing orders
+2023-11-22T16:06:46: 16
+2023-11-22T16:06:46: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T16:06:46: actionable incoming orders
+2023-11-22T16:06:46: actionable outgoing orders
+2023-11-22T16:06:50: 16
+2023-11-22T16:06:50: actionable incoming orders
+2023-11-22T16:06:50: actionable outgoing orders
+2023-11-22T16:06:50: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T16:07:30: 16
+2023-11-22T16:07:30: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T16:07:30: actionable incoming orders
+2023-11-22T16:07:30: actionable outgoing orders
+2023-11-22T16:07:37: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T16:07:37: actionable incoming orders
+2023-11-22T16:07:37: actionable outgoing orders
+2023-11-22T16:07:39: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T16:07:39: user specific services[object Object]
+2023-11-22T16:07:39: { name: 'Sweden' }
+2023-11-22T16:07:41: actionable incoming orders
+2023-11-22T16:07:41: actionable outgoing orders
+2023-11-22T16:07:41: [
+  { id: 56, name: 'Baka Wafflor', description: 'blabla', icon: null },
+  {
+    id: 55,
+    name: 'Testservice',
+    description: "Let's see what this does...",
+    icon: 'bafybeigcenpu2duknfduqap54ww2qc6ggetkteomfmam2xga2v4k3g4gei'
+  }
+]
+2023-11-22T16:07:46: 16
+2023-11-22T16:07:47: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T16:07:47: user specific services[object Object]
+2023-11-22T16:07:47: { name: 'Sweden' }
+2023-11-22T16:08:41: 16
+2023-11-22T16:08:41: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T16:08:41: user specific services[object Object]
+2023-11-22T16:08:41: { name: 'Sweden' }
+2023-11-22T16:08:42: order incoming,,,,
+2023-11-22T16:08:44: order outgoing,,,[object Object],
+2023-11-22T16:08:44: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-22T16:08:44: serviceId: 56
+2023-11-22T16:08:44: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-24T21:12:59: testuser2@mail.com
+2023-11-24T21:13:08: testuser2@mail.com
+2023-11-24T21:14:00: testuser2@mail.com
+2023-11-24T21:14:09: testuser2@mail.com
+2023-11-27T14:41:37: 16
+2023-11-27T14:41:40: 16
+2023-11-27T14:42:25: blk.public@proton.me
+2023-11-27T14:51:49: Server started on port 5000
+2023-11-27T14:51:49: Connected to reciprocal-services-database.
+2023-11-27T14:52:08: 16
+2023-11-27T14:52:08: order outgoing,,,[object Object],
+2023-11-27T14:52:09: serviceId: 56
+2023-11-27T14:52:09: {
+  id: 56,
+  name: 'Baka Wafflor',
+  description: 'blabla',
+  icon: null,
+  recommendedCreditsPerHour: 0,
+  providers: null,
+  weeklyOrderCount: 1
+}
+2023-11-27T14:52:09: {
+  id: 17,
+  firstName: 'Doris ',
+  lastName: 'Habeck',
+  userName: 'Doris',
+  profilePicture: null,
+  profileDescription: '',
+  rating: 5,
+  ratingCount: 1,
+  country: 166,
+  postCode: '51395',
+  city: 'Fristad',
+  travellingForOrders: 0
+}
+2023-11-27T14:52:11: user specific services
+2023-11-27T14:52:11: { name: 'Sweden' }

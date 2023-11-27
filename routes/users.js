@@ -109,6 +109,8 @@ router.put('/update-user', (req, res) => {
 
     const { userId, firstName, lastName, description, country, postCode, city, travellingForOrders } = req.body;
 
+	console.log(country); 
+
     let sql = "UPDATE users SET firstName = ?, lastName = ?, profileDescription = ?, country = ?, postCode = ?, city = ?, travellingForOrders = ? WHERE id = ?";
     prometheusDatabase.query(sql, [firstName, lastName, description, country, postCode, city, travellingForOrders, userId], (error, result) => {
         if(error) throw error;
