@@ -1,18 +1,20 @@
 const mysql = require('mysql2');
 const environment = require('../environment.config');
 
-const prometheusDatabase = mysql.createConnection({
-    host     : environment.DATABASE_HOST,
-    user     : environment.DATABASE_USERNAME,
-    password : environment.DATABASE_PASSWORD,
-    database : environment.DATABASE,
+const prometheusDatabase = mysql.createPool({
+    connectionLimit: 10,
+    host: environment.DATABASE_HOST,
+    user: environment.DATABASE_USERNAME,
+    password: environment.DATABASE_PASSWORD,
+    database: environment.DATABASE,
     multipleStatements: true
 });
 
 console.log(environment.DATABASE_HOST)
 
-prometheusDatabase.connect(error => {
+prometheusDatabase.getConnection((error, connection) => {
     if(error){
+        connection.release();
         throw(error);
     }
     console.log('Connected to reciprocal-services-database.');
