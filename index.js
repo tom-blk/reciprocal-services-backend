@@ -9,7 +9,7 @@ const servicesRouter = require('./routes/services');
 const usersRouter = require('./routes/users');
 const countriesRouter = require('./routes/countries');
 const { expressjwt : jwt } = require('express-jwt');
-const dotenv = require('dotenv');
+const environment = require('./environment.config');
 
 const app = express();
 
@@ -19,22 +19,21 @@ app.use(cookieParser());
 
 app.use(bodyParser.json());
 
-dotenv.config({ path:'./.env' })
-
 app.use(
     cors({
-      origin: process.env.CORS_EXCEPTION,
+      origin: environment.CORS_EXCEPTION,
       credentials: true,
     })
 );
 
-console.log(process.env.JWT_SECRET);
+console.log(`NODE_ENV: ${environment.NODE_ENV}`);
+console.log(environment.CORS_EXCEPTION);
 
 const getTokenFct = (req) => {
     return req.cookies.prometheusUserAuthenticationToken;
 }
 
-app.use(jwt({secret: process.env.JWT_SECRET, algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
+app.use(jwt({secret: environment.JWT_SECRET, algorithms: ['HS256'], getToken: getTokenFct}).unless({ path: ['/auth/log-in', '/auth/register', ]}));
 
 
 app.use('/auth', authRouter);

@@ -1,15 +1,15 @@
 const mysql = require('mysql2');
-const dotenv = require('dotenv');
-
-dotenv.config({ path:'./.env' })
+const environment = require('../environment.config');
 
 const prometheusDatabase = mysql.createConnection({
-    host     : process.env.DATABASE_HOST,
-    user     : process.env.DATABASE_USERNAME,
-    password : process.env.DATABASE_PASSWORD,
-    database : process.env.DATABASE,
+    host     : environment.DATABASE_HOST,
+    user     : environment.DATABASE_USERNAME,
+    password : environment.DATABASE_PASSWORD,
+    database : environment.DATABASE,
     multipleStatements: true
 });
+
+console.log(environment.DATABASE_HOST)
 
 prometheusDatabase.connect(error => {
     if(error){

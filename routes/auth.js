@@ -39,14 +39,14 @@ router.post('/log-in', async (req, res) => {
                     res.status(401).send('Password does not match.')
                 } else {
                     const userAuthenticationToken = createJWT(result[0].id, result[0].username);
-                    res.cookie('prometheusUserAuthenticationToken', userAuthenticationToken, {maxAge: 1000*60*60*24*7, httpOnly: true, sameSite: 'None', secure: true, path:"/"}).send('Login Credentials Were Sent In Response Header.');
+                    res.cookie('prometheusUserAuthenticationToken', userAuthenticationToken, {maxAge: 1000*60*60*24*7, httpOnly: true, sameSite: 'None', secure: true, path:"/"}).send('Login Successful');
                 }
             })
         }
     })
 })
 
-router.post('/log-out', async (req, res) => {
+router.get('/log-out', async (req, res) => {
     res.cookie('prometheusUserAuthenticationToken', 0, {maxAge: 0, httpOnly: true}).send('User Was Logged Out.');
 })
 
