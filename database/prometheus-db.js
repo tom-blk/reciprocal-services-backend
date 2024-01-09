@@ -14,7 +14,10 @@ console.log(environment.DATABASE_HOST)
 
 prometheusDatabase.getConnection((error, connection) => {
     if(error){
-        connection.release();
+        console.log(error);
+        if(connection)(
+            connection.release()
+        )
         throw(error);
     }
     console.log('Connected to reciprocal-services-database.');

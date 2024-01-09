@@ -50,7 +50,7 @@ router.post('/get-users-in-location', (req, res) => {
 router.post('/get-single-user', (req, res) => {
 
     const { userId } = req.body;
-
+    
     let sql = "SELECT id, firstName, lastName, userName, profilePicture, profileDescription, rating, ratingCount, country, postCode, city, travellingForOrders FROM users WHERE id = ?";
 
     prometheusDatabase.query(sql, [userId], (error, result) => {
