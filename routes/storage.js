@@ -30,5 +30,3 @@ router.post('/upload-user-picture', uploadProfilePicture.single('picture'), (req
 })
 
 module.exports = router;
-
-//! fix: form data must be solo, the back end code is okay.

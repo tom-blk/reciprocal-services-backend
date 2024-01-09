@@ -8,6 +8,7 @@ router.post('/create-order', (req, res) => {
 
     const {serviceId, providingUserId, receivingUserId, creditsPerHour, dateIssued, message} = req.body;
 
+
     console.log(`Request Body: ${serviceId, providingUserId, receivingUserId}`);
 
     let sqlCreateOrder = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, message, status, creditsPerHour) VALUES (?, ?, ?, ?, ?, 1, ?)";
@@ -15,16 +16,20 @@ router.post('/create-order', (req, res) => {
     let sqlUpdateWeeklyOrderCount = "UPDATE services SET weeklyOrderCount = weeklyOrderCount + 1 WHERE id = ?";
 
     prometheusDatabase.query(sqlCreateOrder, [serviceId, providingUserId, receivingUserId, dateIssued, message, creditsPerHour], (error, result) => {
-        if(error) throw error;
-        console.log(`Result: ${result}`);
+        if(error){
+            console.log(error)
+            res.status(500).send(error)
+            return
+        }
+        prometheusDatabase.query(sqlUpdateWeeklyOrderCount, [serviceId], (error, result) => {
+            if(error){
+                console.log(error)
+                res.status(500).send(error)
+            }else{
+                res.status(200).send({message: 'Order Successfully Placed!'})
+            }
+        })
     })
-
-    prometheusDatabase.query(sqlUpdateWeeklyOrderCount, [serviceId], (error, result) => {
-        if(error) throw error;
-        console.log(`Result: ${result}`);
-    })
-
-    res.status(200).send({message: 'Order Successfully Placed!'})
 })
 
 //READ
