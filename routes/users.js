@@ -1,6 +1,8 @@
 const express = require('express');
 const prometheusDatabase = require('../database/prometheus-db');
 const router = express.Router();
+const multer = require('multer');
+const fs = require('fs');
 
 
 //CREATE 
@@ -141,6 +143,48 @@ router.put('/update-user', (req, res) => {
             res.status(200).send({successMessage: 'Profile Successfully Updated!'});
         }
     })
+})
+
+const storageProfilePicture = multer.diskStorage({
+    destination: function (req, file, cb){ 
+        console.log(file);
+        cb(null, 'uploads/user-pictures');
+    },
+    filename: function (req, file, cb){
+        cb(null, `user-picture${new Date().getTime()}.png`);
+    }
+})
+
+const uploadProfilePicture = multer({storage: storageProfilePicture})
+
+router.post('/upload-profile-picture', uploadProfilePicture.single('picture'), (req, res) => {
+    
+    const {userId} = req.body
+
+    let sql = "UPDATE users SET profilePicture = 1 WHERE id = ?";
+
+    if(req.file){
+        prometheusDatabase.query(sql, [userId], (error, result) => {
+            if(error){
+                console.log(error)
+                res.status(500).send(`Error while updating your profile.`)
+                return
+            }else{
+                fs.rename(req.file.path, `uploads/user-pictures/user-${userId}-user-picture.png`, (error) => {
+                    if(error){
+                        fs.unlink(req.file.path, (error) => {console.log(error)})
+                        console.log(error);
+                        res.status(500).send("Error updating your profile picture.");
+                    }else{
+                        res.status(200).send("Profile picture successfully updated.");
+                    }
+                })
+            }
+        })
+    }else{
+        res.status(500).send("Error updating your profile picture.")
+    }
+    
 })
 
 router.put('/transfer-credits', (req, res) => {

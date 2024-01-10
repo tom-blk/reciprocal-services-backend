@@ -8,7 +8,6 @@ const ordersRouter = require('./routes/orders');
 const servicesRouter = require('./routes/services');
 const usersRouter = require('./routes/users');
 const countriesRouter = require('./routes/countries');
-const storageRouter = require('./routes/storage');
 const { expressjwt : jwt } = require('express-jwt');
 const environment = require('./environment.config');
 
@@ -43,7 +42,6 @@ app.use('/orders', ordersRouter);
 app.use('/services', servicesRouter);
 app.use('/users', usersRouter);
 app.use('/countries', countriesRouter);
-app.use('/storage', storageRouter);
 
 app.listen(5000, '127.0.0.1', () => {
     console.log('Server started on port 5000')

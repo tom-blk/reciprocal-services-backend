@@ -5,18 +5,13 @@ const fs = require('fs');
 const multer = require('multer');
 
 //CREATE
-let multerFileNamePlaceholder = undefined;
-
 const storageServicePicture = multer.diskStorage({
     destination: function (req, file, cb){ 
         console.log(file);
         cb(null, 'uploads/service-pictures');
     },
     filename: function (req, file, cb){
-        
-        multerFileNamePlaceholder = `service-picture-${new Date().getTime()}.png`
-
-        cb(null, multerFileNamePlaceholder);
+        cb(null, `service-picture${new Date().getTime()}.png`);
     }
 })
 
@@ -24,9 +19,12 @@ const uploadServicePicture = multer({storage: storageServicePicture})
 
 router.post('/create-service', uploadServicePicture.single('picture'), (req, res) => {
 
+    const {name, description, userId, creditsPerHour} = req.body;
+
     let imgError = false;
 
-    const {name, description, userId, creditsPerHour} = req.body;
+    console.log(req.file)
+    console.log(req.body.file);
 
     //!Check if all needed data is there
     for (const entry in req.body){
@@ -35,11 +33,25 @@ router.post('/create-service', uploadServicePicture.single('picture'), (req, res
         }
     }
 
-    const createServiceAndReturnServiceIdSql = "INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 0, 0); SELECT LAST_INSERT_ID() AS serviceId";
+    const returnConditionalSqlBasedOnIcon = () => {
+        if(req.file){
+            return 'INSERT INTO services (name, description, icon, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 1, 0, 0); SELECT LAST_INSERT_ID() AS serviceId';
+        }else{
+            return 'INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 0, 0); SELECT LAST_INSERT_ID() AS serviceId';
+        }
+    }
+
+    const assertIcon = () => {
+        if(req.file){
+            return [name, description, 1]
+        }else{
+            return [name, description]
+        }
+    }
 
     const addToUserServicesSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId, creditsPerHour) VALUES (?, ?, ?)";
 
-    prometheusDatabase.query(createServiceAndReturnServiceIdSql, [name, description], (error, result) => {
+    prometheusDatabase.query(returnConditionalSqlBasedOnIcon(), assertIcon(), (error, result) => {
         if(error){
             console.log(error)
             res.status(500).send("Error creating service, please try again later.")
@@ -50,12 +62,12 @@ router.post('/create-service', uploadServicePicture.single('picture'), (req, res
 
             const removeServiceInCaseOfImageErrorSql = `DELETE FROM services WHERE id=?;`
 
-            if(fs.existsSync(`uploads/service-pictures/${multerFileNamePlaceholder}`)){
-                fs.rename(`uploads/service-pictures/${multerFileNamePlaceholder}`, `uploads/service-pictures/service-${serviceId}-service-picture.png`, (error) => {
+            if(req.file){
+                fs.rename(req.file.path, `uploads/service-pictures/service-${serviceId}-service-picture.png`, (error) => {
                     if(error){
                         console.log(error);
                         imgError = true;
-                        fs.unlink(`uploads/service-pictures/${multerFileNamePlaceholder}`, (error) => {console.log(error)})
+                        fs.unlink(req.file.path, (error) => {console.log(error)})
                         prometheusDatabase.query(removeServiceInCaseOfImageErrorSql, [ serviceId], (error2, result2) => {
                             if(error2)
                                 console.log(error2)
@@ -67,13 +79,11 @@ router.post('/create-service', uploadServicePicture.single('picture'), (req, res
 
             if(imgError)
             return
-
-            const fakeCreds = 'hello'
     
             if(userId === "undefined" || creditsPerHour === "undefined"){ //! The req.body originally transported formData to Multer, which apparently forces the original undefined to become 'undefined', resulting in equation to true
                 res.send({successMessage: `Service ${name} Successfully Created!`})
             } else {
-                prometheusDatabase.query(addToUserServicesSql, [userId, serviceId, fakeCreds], (error3, result3) => { //!---------------------------
+                prometheusDatabase.query(addToUserServicesSql, [userId, serviceId, creditsPerHour], (error3, result3) => {
                     if(error3){
                         console.log(error3)
                         res.status(500).send('Error adding the service to your services, please do it manually by editing your profile.')
