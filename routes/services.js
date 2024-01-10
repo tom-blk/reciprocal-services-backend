@@ -24,68 +24,66 @@ const uploadServicePicture = multer({storage: storageServicePicture})
 
 router.post('/create-service', uploadServicePicture.single('picture'), (req, res) => {
 
-    console.log(req.body);
+    let imgError = false;
 
     const {name, description, userId, creditsPerHour} = req.body;
+
+    //!Check if all needed data is there
+    for (const entry in req.body){
+        if(req.body[entry] === 'undefined'){ //!See lower comment for information on why this is a string
+            console.log(`${entry} is missing in req.body in '/create-service`)
+        }
+    }
 
     const createServiceAndReturnServiceIdSql = "INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 0, 0); SELECT LAST_INSERT_ID() AS serviceId";
 
     const addToUserServicesSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId, creditsPerHour) VALUES (?, ?, ?)";
 
     prometheusDatabase.query(createServiceAndReturnServiceIdSql, [name, description], (error, result) => {
-        console.log(error);
-        if(error) throw error;
-
-        const serviceId = result[1][0].serviceId;
-
-        if(fs.existsSync(`uploads/service-pictures/${multerFileNamePlaceholder}`)){
-        fs.rename(`uploads/service-pictures/${multerFileNamePlaceholder}`, `uploads/service-pictures/service-${serviceId}-service-picture.png`, (error) => {
-            if(error){
-                fs.unlink('uploads/service-pictures/picture.png', (error) => {console.log(error)})
-                console.log(error);
-                res.status(500).send("Error updating the service picture.")
-            }
-        }) } else {
-            console.log("Mf doesn't exist")
-        }
-
-        console.log(userId, creditsPerHour)
-
-        if(userId === "undefined" || creditsPerHour === "undefined"){ //! The req.body originally transported formData to Multer, which apparently forces the original undefined to become 'undefined', resulting in equation to true
-            res.status(200).send({successMessage: `Service ${name} Successfully Created!`})
+        if(error){
+            console.log(error)
+            res.status(500).send("Error creating service, please try again later.")
+            return
         } else {
-            console.log("sth wrong")
-            prometheusDatabase.query(addToUserServicesSql, [userId, serviceId, creditsPerHour], (error2, result2) => {
-                console.log(error2);
-                if(error2) throw error2;
-                console.log(result2);
-                res.status(200).send({successMessage: `Service ${name} Successfully Created and Added to Your Services!`})
-            })
-        }
-    })
-})
 
-router.post('/create-service-and-add-to-user-services', (req, res) => {
+            const serviceId = result[1][0].serviceId;
 
-    const { name, description, userId, creditsPerHour } = req.body;
+            const removeServiceInCaseOfImageErrorSql = `DELETE FROM services WHERE id=?;`
 
-    console.log(`Credits per hour: ${creditsPerHour}`)
+            if(fs.existsSync(`uploads/service-pictures/${multerFileNamePlaceholder}`)){
+                fs.rename(`uploads/service-pictures/${multerFileNamePlaceholder}`, `uploads/service-pictures/service-${serviceId}-service-picture.png`, (error) => {
+                    if(error){
+                        console.log(error);
+                        imgError = true;
+                        fs.unlink(`uploads/service-pictures/${multerFileNamePlaceholder}`, (error) => {console.log(error)})
+                        prometheusDatabase.query(removeServiceInCaseOfImageErrorSql, [ serviceId], (error2, result2) => {
+                            if(error2)
+                                console.log(error2)
+                        })
+                        res.status(500).send("Error uploading the service picture, please try creating the service again.")
+                    }
+                }    
+            )}
 
-    let createServiceSql = "INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 0, 0)";
+            if(imgError)
+            return
 
-    let addToUserServicesSql = "INSERT INTO serviceProviderRelationship (providerId, serviceId, creditsPerHour) VALUES (?, ?, ?)";
-
-    prometheusDatabase.query(createServiceSql, [name, description], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-        prometheusDatabase.query(addToUserServicesSql, [userId, result.insertId, creditsPerHour], (error2, result2) => {
-            if(error2) throw error2;
-            console.log(result2);
-            res.status(200).send({successMessage: `Service ${name} Successfully Created and Added to Your Services !`});
-        })
-    })
-
+            const fakeCreds = 'hello'
     
+            if(userId === "undefined" || creditsPerHour === "undefined"){ //! The req.body originally transported formData to Multer, which apparently forces the original undefined to become 'undefined', resulting in equation to true
+                res.send({successMessage: `Service ${name} Successfully Created!`})
+            } else {
+                prometheusDatabase.query(addToUserServicesSql, [userId, serviceId, fakeCreds], (error3, result3) => { //!---------------------------
+                    if(error3){
+                        console.log(error3)
+                        res.status(500).send('Error adding the service to your services, please do it manually by editing your profile.')
+                    } else {
+                        res.send({successMessage: `Service ${name} Successfully Created and Added to Your Services!`})
+                    }
+                })
+            }
+        }     
+    })
 })
 
 //READ
@@ -98,9 +96,12 @@ router.post('/get-service', (req, res) => {
 
     let sql = "SELECT * FROM services WHERE id = ?";
     prometheusDatabase.query(sql, [serviceId],(error, result) => {
-        if(error) throw error;
-        console.log(result[0]);
-        res.send(result[0]);
+        if(error){
+            console.log(error)
+            res.status(404).send(`Error while getting service ${serviceId}.`)
+        } else {
+            res.send(result[0]);
+        }
     })
 })
 
@@ -112,9 +113,12 @@ router.post('/get-average-credits-per-hour', (req, res) => {
 
     let sql = "SELECT AVG(creditsPerHour) FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ?";
     prometheusDatabase.query(sql, [serviceId, country, postCode],(error, result) => {
-        if(error) throw error;
-        console.log(result[0]);
-        res.send(Object.values(result[0])[0]);
+        if(error){
+            console.log(error)
+            res.status(404).send(`Error while getting the average embers per hour for service ${serviceId}.`)
+        } else {
+            res.send(Object.values(result[0])[0]);
+        }   
     })
 })
 
@@ -123,8 +127,12 @@ router.get('/get-list', (req, res) => {
     let sql = "SELECT id, name, description, icon FROM services ORDER BY weeklyOrderCount DESC";
 
     prometheusDatabase.query(sql, (error, result) => {
-        if(error) throw error;
-        res.send(result);
+        if(error){
+            console.log(error)
+            res.status(500).send(`Error while getting all services.`)
+        } else {
+            res.send(result);
+        }   
     })
 })
 
@@ -132,9 +140,12 @@ router.get('/get-trending-services', (req, res) => {
 
     let sql = "SELECT id, name, description, icon FROM services ORDER BY weeklyOrderCount DESC LIMIT 3";
     prometheusDatabase.query(sql, (error, result) => {
-        if(error) throw error;
-        console.log(result);
-        res.send(result);
+        if(error){
+            console.log(error)
+            res.status(500).send(`Error while getting trending services.`)
+        } else {
+            res.send(result);
+        }
     })
 })
 
@@ -145,10 +156,12 @@ router.post('/get-service-specific-users', (req, res) => {
     let selectUsersSql = "SELECT id, userName, firstName, lastName, email, profileDescription, profilePicture, rating, ratingCount, serviceId, creditsPerHour FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? ORDER BY rating DESC";
 
     prometheusDatabase.query(selectUsersSql, [serviceId], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-
-        res.send(result);
+        if(error){
+            console.log(error)
+            res.status(500).send(`Error while getting users that offer this service.`)
+        } else {
+            res.send(result);
+        }
     })
 })
 
@@ -159,10 +172,12 @@ router.post('/get-local-service-specific-users', (req, res) => {
     let selectUsersSql = "SELECT id, userName, firstName, lastName, email, profileDescription, profilePicture, rating, ratingCount, serviceId, creditsPerHour FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ? AND id NOT LIKE ? ORDER BY rating DESC";
 
     prometheusDatabase.query(selectUsersSql, [serviceId, country, postCode, userId], (error, result) => {
-        if(error) throw error;
-        console.log(result);
-
-        res.send(result);
+        if(error){
+            console.log(error)
+            res.status(500).send(`Error while getting users that offer this service in this area.`)
+        } else {
+            res.send(result);
+        }
     })
 })
 
@@ -172,12 +187,13 @@ router.post('/get-service-provider-count', (req, res) => {
 
     let sql = "SELECT COUNT(providerId) FROM serviceProviderRelationship WHERE serviceId = ?";
     prometheusDatabase.query(sql, [serviceId], (error, result) => {
-        if(error) throw error;
-        console.log(Object.values(result[0])[0]);
-
-        let countedValue = Object.values(result[0])[0];
-
-        res.send({providerCount: countedValue});
+        if(error){
+            console.log(error)
+            res.status(500).send(`Error while getting number users that offer service ${serviceId}.`)
+        } else {
+            let countedValue = Object.values(result[0])[0];
+            res.send({providerCount: countedValue});
+        }   
     })
 })
 
@@ -188,12 +204,13 @@ router.post('/get-local-service-provider-count', (req, res) => {
     let sql = "SELECT COUNT(providerId) FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ? AND id NOT LIKE ?";
 
     prometheusDatabase.query(sql, [serviceId, country, postCode, userId], (error, result) => {
-        if(error) throw error;
-        console.log(Object.values(result[0])[0]);
-
-        let countedValue = Object.values(result[0])[0];
-
-        res.send({providerCount: countedValue});
+        if(error){
+            console.log(error)
+            res.status(500).send(`Error while getting users that offer service ${serviceId} in this area.`)
+        } else {
+            let countedValue = Object.values(result[0])[0];
+            res.send({providerCount: countedValue});
+        }
     })
 })
 

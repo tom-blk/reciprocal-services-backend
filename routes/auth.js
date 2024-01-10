@@ -13,9 +13,12 @@ router.post('/register', async (req, res) => {
     let sql = 'INSERT INTO users (username, email, password, credits, rating, ratingCount, profileDescription) VALUES (?,?,?,0,0,0, "")';
 
     prometheusDatabase.query(sql, [username, email, hashedPassword], (error, result) => {
-        if(error) throw error;
-        console.log(result[0]);
-        res.send(result[0]);
+        if(error){
+            console.log(error);
+            res.status(500).send('Could not register, please try again later.')
+        } else {
+            res.send(result[0]);
+        }
     })
 })
 
@@ -28,7 +31,10 @@ router.post('/log-in', async (req, res) => {
     console.log(email);
 
     prometheusDatabase.query(sql, [email], (error, result) => {
-        if(error) throw error;
+        if(error){
+            console.log(error);
+            res.status(500).send('Something went wrong while logging in, please try again later.')
+        }
         if(result.length<1){
             res.status(401).send('No User With That Email Found.');
         } else if(result.length>1){
@@ -60,8 +66,13 @@ router.get('/get-user', (req, res) => {
         let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription, country, postCode, city, travellingForOrders FROM users WHERE id = ?';
 
         prometheusDatabase.query(sql, [userId], (error, result) => {
-            if(error) res.status(401).send('Something Went Wrong, Please Try Again.')
-            res.send(result[0]);
+            if(error){
+                console.log(error)
+                res.status(401).send('Something Went Wrong, Please Try Again.');
+            } else {
+                res.send(result[0]);
+            }
+            
         })
     }
 })

@@ -6,9 +6,12 @@ router.get('/get-all-countries', (req, res) => {
 
     let sql = 'SELECT * FROM countries';
     prometheusDatabase.query(sql, [], (error, result) => {
-    if(error) throw error;
-    console.log(result);
-    res.send(result);
+    if(error){
+        console.log(error)
+        res.status(500).send('Something went wrong when fetching list of countries, please try again later.')
+    } else{
+        res.send(result);
+    }
     })
 
 })
