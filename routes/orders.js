@@ -8,9 +8,6 @@ router.post('/create-order', (req, res) => {
 
     const {serviceId, providingUserId, receivingUserId, creditsPerHour, dateIssued, message} = req.body;
 
-
-    console.log(`Request Body: ${serviceId, providingUserId, receivingUserId}`);
-
     let sqlCreateOrder = "INSERT INTO orders (serviceId, providingUserId, receivingUserId, dateIssued, message, status, creditsPerHour) VALUES (?, ?, ?, ?, ?, 1, ?)";
 
     let sqlUpdateWeeklyOrderCount = "UPDATE services SET weeklyOrderCount = weeklyOrderCount + 1 WHERE id = ?";
@@ -133,8 +130,6 @@ router.put('/modify-order-status', (req, res) => {
 
     const {status, orderId } = req.body;
 
-    console.log('Order status: ' + status + ', Order id: ' + orderId);
-
     let sql = "UPDATE orders SET status = ? WHERE id = ?";
     prometheusDatabase.query(sql, [status, orderId], (error) => {
         if(error){
@@ -164,8 +159,6 @@ router.put('/specify-provided-hours', (req, res) => {
 router.put('/confirm-order-completion-rate-user-and-transfer-credits', (req, res) => {
 
     const { dateCompleted, orderId, recipientId, senderId, numberOfCredits, rating } = req.body;
-
-    console.log(rating);
 
     let sql = 'UPDATE orders SET status = 4, dateCompleted = ? WHERE id = ?; UPDATE users SET rating = (rating*ratingCount+?)/(ratingCount+1), ratingCount = ratingCount+1 WHERE id = ?; UPDATE users SET credits = credits - ? WHERE id = ?; UPDATE users SET credits = credits + ? WHERE id = ?';
 

@@ -28,8 +28,6 @@ router.post('/log-in', async (req, res) => {
 
     let sql = 'SELECT * FROM users WHERE email = ?';
 
-    console.log(email);
-
     prometheusDatabase.query(sql, [email], (error, result) => {
         if(error){
             console.log(error);
@@ -60,8 +58,6 @@ router.get('/get-user', (req, res) => {
 
     if(req.cookies.prometheusUserAuthenticationToken){
         userId = verifyJWT(req.cookies.prometheusUserAuthenticationToken).id;
-
-        console.log(userId);
 
         let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription, country, postCode, city, travellingForOrders FROM users WHERE id = ?';
 

@@ -7,7 +7,6 @@ const multer = require('multer');
 //CREATE
 const storageServicePicture = multer.diskStorage({
     destination: function (req, file, cb){ 
-        console.log(file);
         cb(null, 'uploads/service-pictures');
     },
     filename: function (req, file, cb){
@@ -23,13 +22,10 @@ router.post('/create-service', uploadServicePicture.single('picture'), (req, res
 
     let imgError = false;
 
-    console.log(req.file)
-    console.log(req.body.file);
-
     //!Check if all needed data is there
     for (const entry in req.body){
         if(req.body[entry] === 'undefined'){ //!See lower comment for information on why this is a string
-            console.log(`${entry} is missing in req.body in '/create-service`)
+            console.log(`Optional parameter ${entry} is missing in req.body in '/create-service`)
         }
     }
 
@@ -102,8 +98,6 @@ router.post('/get-service', (req, res) => {
 
     const {serviceId} = req.body;
 
-    console.log('serviceId: ' + serviceId);
-
     let sql = "SELECT * FROM services WHERE id = ?";
     prometheusDatabase.query(sql, [serviceId],(error, result) => {
         if(error){
@@ -118,8 +112,6 @@ router.post('/get-service', (req, res) => {
 router.post('/get-average-credits-per-hour', (req, res) => {
 
     const {serviceId, country, postCode} = req.body;
-
-    console.log('country: ' + country);
 
     let sql = "SELECT AVG(creditsPerHour) FROM (SELECT * FROM users LEFT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId UNION SELECT * FROM users RIGHT JOIN serviceProviderRelationship ON users.id = serviceProviderRelationship.providerId) serviceProviders WHERE serviceId = ? AND country = ? AND postCode = ?";
     prometheusDatabase.query(sql, [serviceId, country, postCode],(error, result) => {

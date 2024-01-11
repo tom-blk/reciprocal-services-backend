@@ -18,7 +18,6 @@ prometheusDatabase.getConnection((error, connection) => {
         if(connection)(
             connection.release()
         )
-        throw(error);
     }
     console.log('Connected to reciprocal-services-database.');
 });
@@ -27,8 +26,9 @@ const resetWeeeklyOrderCount = () => {
     let sql = "UPDATE services SET weeklyOrderCount = 0";
 
     prometheusDatabase.query(sql, (error, result) => {
-        if(error) throw error;
-        console.log(result);
+        if(error){
+            console.log(error);
+        }
     })
 }
   
