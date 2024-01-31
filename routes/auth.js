@@ -10,14 +10,14 @@ router.post('/register', async (req, res) => {
 
     let hashedPassword = await bcrypt.hash(password, 8);
 
-    let sql = 'INSERT INTO users (username, email, password, credits, rating, ratingCount, profileDescription) VALUES (?,?,?,0,0,0, "")';
+    let sql = 'INSERT INTO users (username, email, password, credits, rating, ratingCount, profileDescription) VALUES (?,?,?,100,0,0, "")';
 
     prometheusDatabase.query(sql, [username, email, hashedPassword], (error, result) => {
         if(error){
             console.log(error);
             res.status(500).send('Could not register, please try again later.')
         } else {
-            res.send(result[0]);
+            res.send("Successfully registered!");
         }
     })
 })
@@ -59,7 +59,7 @@ router.get('/get-user', (req, res) => {
     if(req.cookies.prometheusUserAuthenticationToken){
         userId = verifyJWT(req.cookies.prometheusUserAuthenticationToken).id;
 
-        let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, profileDescription, country, postCode, city, travellingForOrders FROM users WHERE id = ?';
+        let sql = 'SELECT id, firstName, lastName, userName, email, profilePicture, credits, rating, ratingCount, profileDescription, country, postCode, city, travellingForOrders FROM users WHERE id = ?';
 
         prometheusDatabase.query(sql, [userId], (error, result) => {
             if(error){

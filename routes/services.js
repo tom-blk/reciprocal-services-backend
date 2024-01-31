@@ -31,9 +31,9 @@ router.post('/create-service', uploadServicePicture.single('picture'), (req, res
 
     const returnConditionalSqlBasedOnIcon = () => {
         if(req.file){
-            return 'INSERT INTO services (name, description, icon, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 1, 0, 0); SELECT LAST_INSERT_ID() AS serviceId';
+            return 'INSERT INTO services (name, description, icon, weeklyOrderCount) VALUES (?, ?, 1, 0); SELECT LAST_INSERT_ID() AS serviceId';
         }else{
-            return 'INSERT INTO services (name, description, recommendedCreditsPerHour, weeklyOrderCount) VALUES (?, ?, 0, 0); SELECT LAST_INSERT_ID() AS serviceId';
+            return 'INSERT INTO services (name, description, weeklyOrderCount) VALUES (?, ?, 0); SELECT LAST_INSERT_ID() AS serviceId';
         }
     }
 
@@ -76,7 +76,7 @@ router.post('/create-service', uploadServicePicture.single('picture'), (req, res
             if(imgError)
             return
     
-            if(userId === "undefined" || creditsPerHour === "undefined"){ //! The req.body originally transported formData to Multer, which apparently forces the original undefined to become 'undefined', resulting in equation to true
+            if(userId === "undefined" || creditsPerHour === "undefined" || !userId || !creditsPerHour){ //! The req.body originally transported formData to Multer, which apparently forces the original undefined to become 'undefined', resulting in equation to true
                 res.send({successMessage: `Service ${name} Successfully Created!`})
             } else {
                 prometheusDatabase.query(addToUserServicesSql, [userId, serviceId, creditsPerHour], (error3, result3) => {
