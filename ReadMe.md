@@ -1,2 +1,2 @@
-## Backend To: https://gitfront.io/r/tom-blk/WK3yvScSXoSz/reciprocal-services-webapp/
+## Associated frontend: https://github.com/tom-blk/reciprocal-services-webapp
 Read more about this application in the readme there.
